@@ -1,0 +1,4141 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+
+
+
+  <link crossorigin="anonymous" href="https://assets-cdn.github.com/assets/frameworks-d876e21057f406b37686f3dc7b9666f5957cda4847a48ec11e040df065624617.css" integrity="sha256-2HbiEFf0BrN2hvPce5Zm9ZV82khHpI7BHgQN8GViRhc=" media="all" rel="stylesheet" />
+  <link crossorigin="anonymous" href="https://assets-cdn.github.com/assets/github-55f531f4d2df0855425eed58bb0b53bb1b49c2709713c37b2a03d4f42adee847.css" integrity="sha256-VfUx9NLfCFVCXu1YuwtTuxtJwnCXE8N7KgPU9Cre6Ec=" media="all" rel="stylesheet" />
+  
+  
+  <link crossorigin="anonymous" href="https://assets-cdn.github.com/assets/site-3666cbeb0f6b95958e476ea741ce10bd21f9f5475a43a25147df090471765ec1.css" integrity="sha256-NmbL6w9rlZWOR26nQc4QvSH59UdaQ6JRR98JBHF2XsE=" media="all" rel="stylesheet" />
+  
+
+  <meta name="viewport" content="width=device-width">
+  
+  <title>data/fandango_scrape.csv at master · fivethirtyeight/data · GitHub</title>
+  <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="GitHub">
+  <link rel="fluid-icon" href="https://github.com/fluidicon.png" title="GitHub">
+  <meta property="fb:app_id" content="1401488693436528">
+
+
+  <link rel="assets" href="https://assets-cdn.github.com/">
+  
+  <meta name="pjax-timeout" content="1000">
+  
+  <meta name="request-id" content="D871:7692:3592D9:538913:58AF82C0" data-pjax-transient>
+  
+
+  <meta name="selected-link" value="repo_source" data-pjax-transient>
+
+  <meta name="google-site-verification" content="KT5gs8h0wvaagLKAVWq8bbeNwnZZK1r1XQysX3xurLU">
+<meta name="google-site-verification" content="ZzhVyEFwb7w3e0-uOTltm8Jsck2F5StVihD0exw2fsA">
+    <meta name="google-analytics" content="UA-3769691-2">
+
+<meta content="collector.githubapp.com" name="octolytics-host" /><meta content="github" name="octolytics-app-id" /><meta content="https://collector.githubapp.com/github-external/browser_event" name="octolytics-event-url" /><meta content="D871:7692:3592D9:538913:58AF82C0" name="octolytics-dimension-request_id" />
+<meta content="/&lt;user-name&gt;/&lt;repo-name&gt;/blob/show" data-pjax-transient="true" name="analytics-location" />
+
+
+
+  <meta class="js-ga-set" name="dimension1" content="Logged Out">
+
+
+
+      <meta name="hostname" content="github.com">
+  <meta name="user-login" content="">
+
+      <meta name="expected-hostname" content="github.com">
+    <meta name="js-proxy-site-detection-payload" content="ZTE0YWE0OTMzYjNiODdiYmYyN2M1ZmY3ZWRmYzcwNGJmMDAyYjdkMDRkZjExYmQ4YzM4N2QyZGMyODU2YzRlYXx7InJlbW90ZV9hZGRyZXNzIjoiNzYuMTkyLjExMi4yMyIsInJlcXVlc3RfaWQiOiJEODcxOjc2OTI6MzU5MkQ5OjUzODkxMzo1OEFGODJDMCIsInRpbWVzdGFtcCI6MTQ4Nzg5NzI4MCwiaG9zdCI6ImdpdGh1Yi5jb20ifQ==">
+
+
+  <meta name="html-safe-nonce" content="4bc4257ca487472064c977d3804a2da1fc4ff058">
+
+  <meta http-equiv="x-pjax-version" content="15aed3a6dbdb40f614de67e5a0a33fcf">
+  
+
+    
+  <meta name="description" content="data - Data and code behind the stories and interactives at FiveThirtyEight">
+  <meta name="go-import" content="github.com/fivethirtyeight/data git https://github.com/fivethirtyeight/data.git">
+
+  <meta content="6267336" name="octolytics-dimension-user_id" /><meta content="fivethirtyeight" name="octolytics-dimension-user_login" /><meta content="17829481" name="octolytics-dimension-repository_id" /><meta content="fivethirtyeight/data" name="octolytics-dimension-repository_nwo" /><meta content="true" name="octolytics-dimension-repository_public" /><meta content="false" name="octolytics-dimension-repository_is_fork" /><meta content="17829481" name="octolytics-dimension-repository_network_root_id" /><meta content="fivethirtyeight/data" name="octolytics-dimension-repository_network_root_nwo" />
+  <link href="https://github.com/fivethirtyeight/data/commits/master.atom" rel="alternate" title="Recent Commits to data:master" type="application/atom+xml">
+
+
+    <link rel="canonical" href="https://github.com/fivethirtyeight/data/blob/master/fandango/fandango_scrape.csv" data-pjax-transient>
+
+
+  <meta name="browser-stats-url" content="https://api.github.com/_private/browser/stats">
+
+  <meta name="browser-errors-url" content="https://api.github.com/_private/browser/errors">
+
+  <link rel="mask-icon" href="https://assets-cdn.github.com/pinned-octocat.svg" color="#000000">
+  <link rel="icon" type="image/x-icon" href="https://assets-cdn.github.com/favicon.ico">
+
+<meta name="theme-color" content="#1e2327">
+
+
+  <meta name="u2f-support" content="true">
+
+  </head>
+
+  <body class="logged-out env-production emoji-size-boost macintosh vis-public page-blob">
+    
+
+  <div class="position-relative js-header-wrapper ">
+    <a href="#start-of-content" tabindex="1" class="accessibility-aid js-skip-to-content">Skip to content</a>
+    <div id="js-pjax-loader-bar" class="pjax-loader-bar"><div class="progress"></div></div>
+
+    
+    
+    
+
+
+
+          <header class="site-header js-details-container Details" role="banner">
+  <div class="container-responsive">
+    <a class="header-logo-invertocat" href="https://github.com/" aria-label="Homepage" data-ga-click="(Logged out) Header, go to homepage, icon:logo-wordmark">
+      <svg aria-hidden="true" class="octicon octicon-mark-github" height="32" version="1.1" viewBox="0 0 16 16" width="32"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+    </a>
+
+    <button class="btn-link float-right site-header-toggle js-details-target" type="button" aria-label="Toggle navigation">
+      <svg aria-hidden="true" class="octicon octicon-three-bars" height="24" version="1.1" viewBox="0 0 12 16" width="18"><path fill-rule="evenodd" d="M11.41 9H.59C0 9 0 8.59 0 8c0-.59 0-1 .59-1H11.4c.59 0 .59.41.59 1 0 .59 0 1-.59 1h.01zm0-4H.59C0 5 0 4.59 0 4c0-.59 0-1 .59-1H11.4c.59 0 .59.41.59 1 0 .59 0 1-.59 1h.01zM.59 11H11.4c.59 0 .59.41.59 1 0 .59 0 1-.59 1H.59C0 13 0 12.59 0 12c0-.59 0-1 .59-1z"/></svg>
+    </button>
+
+    <div class="site-header-menu">
+      <nav class="site-header-nav">
+        <a href="/personal" class="js-selected-navigation-item nav-item" data-ga-click="Header, click, Nav menu - item:personal" data-selected-links="/personal /personal">
+          Personal
+</a>        <a href="/open-source" class="js-selected-navigation-item nav-item" data-ga-click="Header, click, Nav menu - item:opensource" data-selected-links="/open-source /open-source/stories /open-source">
+          Open source
+</a>        <a href="/business" class="js-selected-navigation-item nav-item" data-ga-click="Header, click, Nav menu - item:business" data-selected-links="/business /business/partners /business/features /business/customers /business/why-github-for-work /business/security /business">
+          Business
+</a>        <a href="/explore" class="js-selected-navigation-item nav-item" data-ga-click="Header, click, Nav menu - item:explore" data-selected-links="/explore /trending /trending/developers /integrations /integrations/feature/code /integrations/feature/collaborate /integrations/feature/ship /showcases /explore">
+          Explore
+</a>        <a href="/pricing" class="js-selected-navigation-item nav-item" data-ga-click="Header, click, Nav menu - item:pricing" data-selected-links="/pricing /pricing">
+          Pricing
+</a>      </nav>
+
+      <div class="site-header-actions">
+          <div class="header-search scoped-search site-scoped-search js-site-search" role="search">
+  <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/fivethirtyeight/data/search" class="js-site-search-form" data-scoped-search-url="/fivethirtyeight/data/search" data-unscoped-search-url="/search" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+    <label class="form-control header-search-wrapper js-chromeless-input-container">
+      <div class="header-search-scope">This repository</div>
+      <input type="text"
+        class="form-control header-search-input js-site-search-focus js-site-search-field is-clearable"
+        data-hotkey="s"
+        name="q"
+        placeholder="Search"
+        aria-label="Search this repository"
+        data-unscoped-placeholder="Search GitHub"
+        data-scoped-placeholder="Search"
+        autocapitalize="off">
+    </label>
+</form></div>
+
+
+          <a class="text-bold" href="/login?return_to=%2Ffivethirtyeight%2Fdata%2Fblob%2Fmaster%2Ffandango%2Ffandango_scrape.csv" data-ga-click="(Logged out) Header, clicked Sign in, text:sign-in">Sign in</a>
+            <span class="text-gray">or</span>
+            <a class="text-bold" href="/join?source=header-repo" data-ga-click="(Logged out) Header, clicked Sign up, text:sign-up">Sign up</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+  </div>
+
+  <div id="start-of-content" class="accessibility-aid"></div>
+
+    <div id="js-flash-container">
+</div>
+
+
+
+  <div role="main">
+      <div itemscope itemtype="http://schema.org/SoftwareSourceCode">
+    <div id="js-repo-pjax-container" data-pjax-container>
+      
+
+
+
+<div class="pagehead repohead instapaper_ignore readability-menu experiment-repo-nav">
+  <div class="container repohead-details-container">
+
+    
+
+<ul class="pagehead-actions">
+
+  <li>
+      <a href="/login?return_to=%2Ffivethirtyeight%2Fdata"
+    class="btn btn-sm btn-with-count tooltipped tooltipped-n"
+    aria-label="You must be signed in to watch a repository" rel="nofollow">
+    <svg aria-hidden="true" class="octicon octicon-eye" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z"/></svg>
+    Watch
+  </a>
+  <a class="social-count" href="/fivethirtyeight/data/watchers"
+     aria-label="815 users are watching this repository">
+    815
+  </a>
+
+  </li>
+
+  <li>
+      <a href="/login?return_to=%2Ffivethirtyeight%2Fdata"
+    class="btn btn-sm btn-with-count tooltipped tooltipped-n"
+    aria-label="You must be signed in to star a repository" rel="nofollow">
+    <svg aria-hidden="true" class="octicon octicon-star" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74z"/></svg>
+    Star
+  </a>
+
+    <a class="social-count js-social-count" href="/fivethirtyeight/data/stargazers"
+      aria-label="4919 users starred this repository">
+      4,919
+    </a>
+
+  </li>
+
+  <li>
+      <a href="/login?return_to=%2Ffivethirtyeight%2Fdata"
+        class="btn btn-sm btn-with-count tooltipped tooltipped-n"
+        aria-label="You must be signed in to fork a repository" rel="nofollow">
+        <svg aria-hidden="true" class="octicon octicon-repo-forked" height="16" version="1.1" viewBox="0 0 10 16" width="10"><path fill-rule="evenodd" d="M8 1a1.993 1.993 0 0 0-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 0 0 2 1a1.993 1.993 0 0 0-1 3.72V6.5l3 3v1.78A1.993 1.993 0 0 0 5 15a1.993 1.993 0 0 0 1-3.72V9.5l3-3V4.72A1.993 1.993 0 0 0 8 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+        Fork
+      </a>
+
+    <a href="/fivethirtyeight/data/network" class="social-count"
+       aria-label="1792 users forked this repository">
+      1,792
+    </a>
+  </li>
+</ul>
+
+    <h1 class="public ">
+  <svg aria-hidden="true" class="octicon octicon-repo" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z"/></svg>
+  <span class="author" itemprop="author"><a href="/fivethirtyeight" class="url fn" rel="author">fivethirtyeight</a></span><!--
+--><span class="path-divider">/</span><!--
+--><strong itemprop="name"><a href="/fivethirtyeight/data" data-pjax="#js-repo-pjax-container">data</a></strong>
+
+</h1>
+
+  </div>
+  <div class="container">
+    
+<nav class="reponav js-repo-nav js-sidenav-container-pjax"
+     itemscope
+     itemtype="http://schema.org/BreadcrumbList"
+     role="navigation"
+     data-pjax="#js-repo-pjax-container">
+
+  <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+    <a href="/fivethirtyeight/data" class="js-selected-navigation-item selected reponav-item" data-hotkey="g c" data-selected-links="repo_source repo_downloads repo_commits repo_releases repo_tags repo_branches /fivethirtyeight/data" itemprop="url">
+      <svg aria-hidden="true" class="octicon octicon-code" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path fill-rule="evenodd" d="M9.5 3L8 4.5 11.5 8 8 11.5 9.5 13 14 8 9.5 3zm-5 0L0 8l4.5 5L6 11.5 2.5 8 6 4.5 4.5 3z"/></svg>
+      <span itemprop="name">Code</span>
+      <meta itemprop="position" content="1">
+</a>  </span>
+
+    <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+      <a href="/fivethirtyeight/data/issues" class="js-selected-navigation-item reponav-item" data-hotkey="g i" data-selected-links="repo_issues repo_labels repo_milestones /fivethirtyeight/data/issues" itemprop="url">
+        <svg aria-hidden="true" class="octicon octicon-issue-opened" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"/></svg>
+        <span itemprop="name">Issues</span>
+        <span class="counter">12</span>
+        <meta itemprop="position" content="2">
+</a>    </span>
+
+  <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+    <a href="/fivethirtyeight/data/pulls" class="js-selected-navigation-item reponav-item" data-hotkey="g p" data-selected-links="repo_pulls /fivethirtyeight/data/pulls" itemprop="url">
+      <svg aria-hidden="true" class="octicon octicon-git-pull-request" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M11 11.28V5c-.03-.78-.34-1.47-.94-2.06C9.46 2.35 8.78 2.03 8 2H7V0L4 3l3 3V4h1c.27.02.48.11.69.31.21.2.3.42.31.69v6.28A1.993 1.993 0 0 0 10 15a1.993 1.993 0 0 0 1-3.72zm-1 2.92c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zM4 3c0-1.11-.89-2-2-2a1.993 1.993 0 0 0-1 3.72v6.56A1.993 1.993 0 0 0 2 15a1.993 1.993 0 0 0 1-3.72V4.72c.59-.34 1-.98 1-1.72zm-.8 10c0 .66-.55 1.2-1.2 1.2-.65 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+      <span itemprop="name">Pull requests</span>
+      <span class="counter">9</span>
+      <meta itemprop="position" content="3">
+</a>  </span>
+
+  <a href="/fivethirtyeight/data/projects" class="js-selected-navigation-item reponav-item" data-selected-links="repo_projects new_repo_project repo_project /fivethirtyeight/data/projects">
+    <svg aria-hidden="true" class="octicon octicon-project" height="16" version="1.1" viewBox="0 0 15 16" width="15"><path fill-rule="evenodd" d="M10 12h3V2h-3v10zm-4-2h3V2H6v8zm-4 4h3V2H2v12zm-1 1h13V1H1v14zM14 0H1a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h13a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1z"/></svg>
+    Projects
+    <span class="counter">0</span>
+</a>
+    <a href="/fivethirtyeight/data/wiki" class="js-selected-navigation-item reponav-item" data-hotkey="g w" data-selected-links="repo_wiki /fivethirtyeight/data/wiki">
+      <svg aria-hidden="true" class="octicon octicon-book" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M3 5h4v1H3V5zm0 3h4V7H3v1zm0 2h4V9H3v1zm11-5h-4v1h4V5zm0 2h-4v1h4V7zm0 2h-4v1h4V9zm2-6v9c0 .55-.45 1-1 1H9.5l-1 1-1-1H2c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h5.5l1 1 1-1H15c.55 0 1 .45 1 1zm-8 .5L7.5 3H2v9h6V3.5zm7-.5H9.5l-.5.5V12h6V3z"/></svg>
+      Wiki
+</a>
+
+  <a href="/fivethirtyeight/data/pulse" class="js-selected-navigation-item reponav-item" data-selected-links="pulse /fivethirtyeight/data/pulse">
+    <svg aria-hidden="true" class="octicon octicon-pulse" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path fill-rule="evenodd" d="M11.5 8L8.8 5.4 6.6 8.5 5.5 1.6 2.38 8H0v2h3.6l.9-1.8.9 5.4L9 8.5l1.6 1.5H14V8z"/></svg>
+    Pulse
+</a>
+  <a href="/fivethirtyeight/data/graphs" class="js-selected-navigation-item reponav-item" data-selected-links="repo_graphs repo_contributors /fivethirtyeight/data/graphs">
+    <svg aria-hidden="true" class="octicon octicon-graph" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M16 14v1H0V0h1v14h15zM5 13H3V8h2v5zm4 0H7V3h2v10zm4 0h-2V6h2v7z"/></svg>
+    Graphs
+</a>
+
+</nav>
+
+  </div>
+</div>
+
+<div class="container new-discussion-timeline experiment-repo-nav">
+  <div class="repository-content">
+
+    
+
+<a href="/fivethirtyeight/data/blob/fbfa7b9a60ecf907a2bfab11a7d0a917613fb1d6/fandango/fandango_scrape.csv" class="d-none js-permalink-shortcut" data-hotkey="y">Permalink</a>
+
+<!-- blob contrib key: blob_contributors:v21:07739503ae01e3fc51217d044f7f584f -->
+
+<div class="file-navigation js-zeroclipboard-container">
+  
+<div class="select-menu branch-select-menu js-menu-container js-select-menu float-left">
+  <button class="btn btn-sm select-menu-button js-menu-target css-truncate" data-hotkey="w"
+    
+    type="button" aria-label="Switch branches or tags" tabindex="0" aria-haspopup="true">
+    <i>Branch:</i>
+    <span class="js-select-button css-truncate-target">master</span>
+  </button>
+
+  <div class="select-menu-modal-holder js-menu-content js-navigation-container" data-pjax aria-hidden="true">
+
+    <div class="select-menu-modal">
+      <div class="select-menu-header">
+        <svg aria-label="Close" class="octicon octicon-x js-menu-close" height="16" role="img" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48z"/></svg>
+        <span class="select-menu-title">Switch branches/tags</span>
+      </div>
+
+      <div class="select-menu-filters">
+        <div class="select-menu-text-filter">
+          <input type="text" aria-label="Filter branches/tags" id="context-commitish-filter-field" class="form-control js-filterable-field js-navigation-enable" placeholder="Filter branches/tags">
+        </div>
+        <div class="select-menu-tabs">
+          <ul>
+            <li class="select-menu-tab">
+              <a href="#" data-tab-filter="branches" data-filter-placeholder="Filter branches/tags" class="js-select-menu-tab" role="tab">Branches</a>
+            </li>
+            <li class="select-menu-tab">
+              <a href="#" data-tab-filter="tags" data-filter-placeholder="Find a tag…" class="js-select-menu-tab" role="tab">Tags</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="select-menu-list select-menu-tab-bucket js-select-menu-tab-bucket" data-tab-filter="branches" role="menu">
+
+        <div data-filterable-for="context-commitish-filter-field" data-filterable-type="substring">
+
+
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+               href="/fivethirtyeight/data/blob/commencement/fandango/fandango_scrape.csv"
+               data-name="commencement"
+               data-skip-pjax="true"
+               rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target js-select-menu-filter-text">
+                commencement
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open selected"
+               href="/fivethirtyeight/data/blob/master/fandango/fandango_scrape.csv"
+               data-name="master"
+               data-skip-pjax="true"
+               rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target js-select-menu-filter-text">
+                master
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+               href="/fivethirtyeight/data/blob/revert-34-patch-1/fandango/fandango_scrape.csv"
+               data-name="revert-34-patch-1"
+               data-skip-pjax="true"
+               rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target js-select-menu-filter-text">
+                revert-34-patch-1
+              </span>
+            </a>
+        </div>
+
+          <div class="select-menu-no-results">Nothing to show</div>
+      </div>
+
+      <div class="select-menu-list select-menu-tab-bucket js-select-menu-tab-bucket" data-tab-filter="tags">
+        <div data-filterable-for="context-commitish-filter-field" data-filterable-type="substring">
+
+
+        </div>
+
+        <div class="select-menu-no-results">Nothing to show</div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+  <div class="BtnGroup float-right">
+    <a href="/fivethirtyeight/data/find/master"
+          class="js-pjax-capture-input btn btn-sm BtnGroup-item"
+          data-pjax
+          data-hotkey="t">
+      Find file
+    </a>
+    <button aria-label="Copy file path to clipboard" class="js-zeroclipboard btn btn-sm BtnGroup-item tooltipped tooltipped-s" data-copied-hint="Copied!" type="button">Copy path</button>
+  </div>
+  <div class="breadcrumb js-zeroclipboard-target">
+    <span class="repo-root js-repo-root"><span class="js-path-segment"><a href="/fivethirtyeight/data"><span>data</span></a></span></span><span class="separator">/</span><span class="js-path-segment"><a href="/fivethirtyeight/data/tree/master/fandango"><span>fandango</span></a></span><span class="separator">/</span><strong class="final-path">fandango_scrape.csv</strong>
+  </div>
+</div>
+
+
+  <div class="commit-tease">
+      <span class="float-right">
+        <a class="commit-tease-sha" href="/fivethirtyeight/data/commit/a4f8aa3922f46899be2c384bd3c32454b3176ea4" data-pjax>
+          a4f8aa3
+        </a>
+        <relative-time datetime="2015-10-15T16:42:01Z">Oct 15, 2015</relative-time>
+      </span>
+      <div>
+        <img alt="@bycoffe" class="avatar" height="20" src="https://avatars1.githubusercontent.com/u/88076?v=3&amp;s=40" width="20" />
+        <a href="/bycoffe" class="user-mention" rel="contributor">bycoffe</a>
+          <a href="/fivethirtyeight/data/commit/a4f8aa3922f46899be2c384bd3c32454b3176ea4" class="message" data-pjax="true" title="Add Fandango data">Add Fandango data</a>
+      </div>
+
+    <div class="commit-tease-contributors">
+      <button type="button" class="btn-link muted-link contributors-toggle" data-facebox="#blob_contributors_box">
+        <strong>1</strong>
+         contributor
+      </button>
+      
+    </div>
+
+    <div id="blob_contributors_box" style="display:none">
+      <h2 class="facebox-header" data-facebox-id="facebox-header">Users who have contributed to this file</h2>
+      <ul class="facebox-user-list" data-facebox-id="facebox-description">
+          <li class="facebox-user-list-item">
+            <img alt="@bycoffe" height="24" src="https://avatars3.githubusercontent.com/u/88076?v=3&amp;s=48" width="24" />
+            <a href="/bycoffe">bycoffe</a>
+          </li>
+      </ul>
+    </div>
+  </div>
+
+
+<div class="file">
+  <div class="file-header">
+  <div class="file-actions">
+
+    <div class="BtnGroup">
+      <a href="/fivethirtyeight/data/raw/master/fandango/fandango_scrape.csv" class="btn btn-sm BtnGroup-item" id="raw-url">Raw</a>
+        <a href="/fivethirtyeight/data/blame/master/fandango/fandango_scrape.csv" class="btn btn-sm js-update-url-with-hash BtnGroup-item" data-hotkey="b">Blame</a>
+      <a href="/fivethirtyeight/data/commits/master/fandango/fandango_scrape.csv" class="btn btn-sm BtnGroup-item" rel="nofollow">History</a>
+    </div>
+
+        <a class="btn-octicon tooltipped tooltipped-nw"
+           href="https://mac.github.com"
+           aria-label="Open this file in GitHub Desktop"
+           data-ga-click="Repository, open with desktop, type:mac">
+            <svg aria-hidden="true" class="octicon octicon-device-desktop" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M15 2H1c-.55 0-1 .45-1 1v9c0 .55.45 1 1 1h5.34c-.25.61-.86 1.39-2.34 2h8c-1.48-.61-2.09-1.39-2.34-2H15c.55 0 1-.45 1-1V3c0-.55-.45-1-1-1zm0 9H1V3h14v8z"/></svg>
+        </a>
+
+        <button type="button" class="btn-octicon disabled tooltipped tooltipped-nw"
+          aria-label="You must be signed in to make or propose changes">
+          <svg aria-hidden="true" class="octicon octicon-pencil" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path fill-rule="evenodd" d="M0 12v3h3l8-8-3-3-8 8zm3 2H1v-2h1v1h1v1zm10.3-9.3L12 6 9 3l1.3-1.3a.996.996 0 0 1 1.41 0l1.59 1.59c.39.39.39 1.02 0 1.41z"/></svg>
+        </button>
+        <button type="button" class="btn-octicon btn-octicon-danger disabled tooltipped tooltipped-nw"
+          aria-label="You must be signed in to make or propose changes">
+          <svg aria-hidden="true" class="octicon octicon-trashcan" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M11 2H9c0-.55-.45-1-1-1H5c-.55 0-1 .45-1 1H2c-.55 0-1 .45-1 1v1c0 .55.45 1 1 1v9c0 .55.45 1 1 1h7c.55 0 1-.45 1-1V5c.55 0 1-.45 1-1V3c0-.55-.45-1-1-1zm-1 12H3V5h1v8h1V5h1v8h1V5h1v8h1V5h1v9zm1-10H2V3h9v1z"/></svg>
+        </button>
+  </div>
+
+  <div class="file-info">
+      512 lines (511 sloc)
+      <span class="file-info-divider"></span>
+    17.1 KB
+  </div>
+</div>
+
+  
+
+  <div itemprop="text" class="blob-wrapper data type-csv">
+      <div class="blob-interaction-bar">
+  <svg aria-hidden="true" class="octicon octicon-search" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M15.7 13.3l-3.81-3.83A5.93 5.93 0 0 0 13 6c0-3.31-2.69-6-6-6S1 2.69 1 6s2.69 6 6 6c1.3 0 2.48-.41 3.47-1.11l3.83 3.81c.19.2.45.3.7.3.25 0 .52-.09.7-.3a.996.996 0 0 0 0-1.41v.01zM7 10.7c-2.59 0-4.7-2.11-4.7-4.7 0-2.59 2.11-4.7 4.7-4.7 2.59 0 4.7 2.11 4.7 4.7 0 2.59-2.11 4.7-4.7 4.7z"/></svg>
+  <input type="text" name="filter" class="form-control js-csv-filter-field blob-filter" autocapitalize="off"
+         placeholder="Search this file…" aria-label="Search this file…">
+</div>
+
+<div class="markdown-body">
+  <table class="js-csv-data csv-data js-file-line-container">
+    <thead>
+      <tr id="LC1" class="js-file-line">
+        <td id="L1" class="blob-num js-line-number" data-line-number="1"></td>
+        <th>FILM</th>
+        <th>STARS</th>
+        <th>RATING</th>
+        <th>VOTES</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr id="LC2" class="js-file-line">
+        <td id="L2" class="blob-num js-line-number" data-line-number="2"></td>
+        <td>Fifty Shades of Grey (2015)</td>
+        <td>4</td>
+        <td>3.9</td>
+        <td>34846</td>
+      </tr>
+      <tr id="LC3" class="js-file-line">
+        <td id="L3" class="blob-num js-line-number" data-line-number="3"></td>
+        <td>Jurassic World (2015)</td>
+        <td>4.5</td>
+        <td>4.5</td>
+        <td>34390</td>
+      </tr>
+      <tr id="LC4" class="js-file-line">
+        <td id="L4" class="blob-num js-line-number" data-line-number="4"></td>
+        <td>American Sniper (2015)</td>
+        <td>5</td>
+        <td>4.8</td>
+        <td>34085</td>
+      </tr>
+      <tr id="LC5" class="js-file-line">
+        <td id="L5" class="blob-num js-line-number" data-line-number="5"></td>
+        <td>Furious 7 (2015)</td>
+        <td>5</td>
+        <td>4.8</td>
+        <td>33538</td>
+      </tr>
+      <tr id="LC6" class="js-file-line">
+        <td id="L6" class="blob-num js-line-number" data-line-number="6"></td>
+        <td>Inside Out (2015)</td>
+        <td>4.5</td>
+        <td>4.5</td>
+        <td>15749</td>
+      </tr>
+      <tr id="LC7" class="js-file-line">
+        <td id="L7" class="blob-num js-line-number" data-line-number="7"></td>
+        <td>The Hobbit: The Battle of the Five Armies (2014)</td>
+        <td>4.5</td>
+        <td>4.3</td>
+        <td>15337</td>
+      </tr>
+      <tr id="LC8" class="js-file-line">
+        <td id="L8" class="blob-num js-line-number" data-line-number="8"></td>
+        <td>Kingsman: The Secret Service (2015)</td>
+        <td>4.5</td>
+        <td>4.2</td>
+        <td>15205</td>
+      </tr>
+      <tr id="LC9" class="js-file-line">
+        <td id="L9" class="blob-num js-line-number" data-line-number="9"></td>
+        <td>Minions (2015)</td>
+        <td>4</td>
+        <td>4</td>
+        <td>14998</td>
+      </tr>
+      <tr id="LC10" class="js-file-line">
+        <td id="L10" class="blob-num js-line-number" data-line-number="10"></td>
+        <td>Avengers: Age of Ultron (2015)</td>
+        <td>5</td>
+        <td>4.5</td>
+        <td>14846</td>
+      </tr>
+      <tr id="LC11" class="js-file-line">
+        <td id="L11" class="blob-num js-line-number" data-line-number="11"></td>
+        <td>Into the Woods (2014)</td>
+        <td>3.5</td>
+        <td>3.4</td>
+        <td>13055</td>
+      </tr>
+      <tr id="LC12" class="js-file-line">
+        <td id="L12" class="blob-num js-line-number" data-line-number="12"></td>
+        <td>Cinderella (2015)</td>
+        <td>5</td>
+        <td>4.5</td>
+        <td>12640</td>
+      </tr>
+      <tr id="LC13" class="js-file-line">
+        <td id="L13" class="blob-num js-line-number" data-line-number="13"></td>
+        <td>Ant-Man (2015)</td>
+        <td>5</td>
+        <td>4.5</td>
+        <td>12055</td>
+      </tr>
+      <tr id="LC14" class="js-file-line">
+        <td id="L14" class="blob-num js-line-number" data-line-number="14"></td>
+        <td>Mad Max: Fury Road (2015)</td>
+        <td>4.5</td>
+        <td>4.3</td>
+        <td>10509</td>
+      </tr>
+      <tr id="LC15" class="js-file-line">
+        <td id="L15" class="blob-num js-line-number" data-line-number="15"></td>
+        <td>San Andreas (2015)</td>
+        <td>4.5</td>
+        <td>4.3</td>
+        <td>9749</td>
+      </tr>
+      <tr id="LC16" class="js-file-line">
+        <td id="L16" class="blob-num js-line-number" data-line-number="16"></td>
+        <td>Unbroken (2014)</td>
+        <td>4.5</td>
+        <td>4.1</td>
+        <td>9443</td>
+      </tr>
+      <tr id="LC17" class="js-file-line">
+        <td id="L17" class="blob-num js-line-number" data-line-number="17"></td>
+        <td>Spy (2015)</td>
+        <td>4.5</td>
+        <td>4.3</td>
+        <td>9418</td>
+      </tr>
+      <tr id="LC18" class="js-file-line">
+        <td id="L18" class="blob-num js-line-number" data-line-number="18"></td>
+        <td>Magic Mike XXL (2015)</td>
+        <td>4.5</td>
+        <td>4.4</td>
+        <td>9363</td>
+      </tr>
+      <tr id="LC19" class="js-file-line">
+        <td id="L19" class="blob-num js-line-number" data-line-number="19"></td>
+        <td>Trainwreck (2015)</td>
+        <td>4.5</td>
+        <td>4.1</td>
+        <td>8381</td>
+      </tr>
+      <tr id="LC20" class="js-file-line">
+        <td id="L20" class="blob-num js-line-number" data-line-number="20"></td>
+        <td>Mission: Impossible - Rogue Nation (2015)</td>
+        <td>4.5</td>
+        <td>4.4</td>
+        <td>8357</td>
+      </tr>
+      <tr id="LC21" class="js-file-line">
+        <td id="L21" class="blob-num js-line-number" data-line-number="21"></td>
+        <td>Straight Outta Compton (2015)</td>
+        <td>5</td>
+        <td>4.8</td>
+        <td>8096</td>
+      </tr>
+      <tr id="LC22" class="js-file-line">
+        <td id="L22" class="blob-num js-line-number" data-line-number="22"></td>
+        <td>Tomorrowland (2015)</td>
+        <td>4</td>
+        <td>3.7</td>
+        <td>8077</td>
+      </tr>
+      <tr id="LC23" class="js-file-line">
+        <td id="L23" class="blob-num js-line-number" data-line-number="23"></td>
+        <td>The Imitation Game (2014)</td>
+        <td>5</td>
+        <td>4.6</td>
+        <td>8055</td>
+      </tr>
+      <tr id="LC24" class="js-file-line">
+        <td id="L24" class="blob-num js-line-number" data-line-number="24"></td>
+        <td>Home (2015)</td>
+        <td>4.5</td>
+        <td>4.4</td>
+        <td>7705</td>
+      </tr>
+      <tr id="LC25" class="js-file-line">
+        <td id="L25" class="blob-num js-line-number" data-line-number="25"></td>
+        <td>The Divergent Series: Insurgent (2015)</td>
+        <td>4.5</td>
+        <td>4.2</td>
+        <td>7123</td>
+      </tr>
+      <tr id="LC26" class="js-file-line">
+        <td id="L26" class="blob-num js-line-number" data-line-number="26"></td>
+        <td>Selma (2014)</td>
+        <td>5</td>
+        <td>4.6</td>
+        <td>7025</td>
+      </tr>
+      <tr id="LC27" class="js-file-line">
+        <td id="L27" class="blob-num js-line-number" data-line-number="27"></td>
+        <td>Annie (2014)</td>
+        <td>4.5</td>
+        <td>4.2</td>
+        <td>6835</td>
+      </tr>
+      <tr id="LC28" class="js-file-line">
+        <td id="L28" class="blob-num js-line-number" data-line-number="28"></td>
+        <td>Taken 3 (2015)</td>
+        <td>4.5</td>
+        <td>4.1</td>
+        <td>6757</td>
+      </tr>
+      <tr id="LC29" class="js-file-line">
+        <td id="L29" class="blob-num js-line-number" data-line-number="29"></td>
+        <td>The Wedding Ringer (2015)</td>
+        <td>4.5</td>
+        <td>4.4</td>
+        <td>6506</td>
+      </tr>
+      <tr id="LC30" class="js-file-line">
+        <td id="L30" class="blob-num js-line-number" data-line-number="30"></td>
+        <td>Ted 2 (2015)</td>
+        <td>4.5</td>
+        <td>4.1</td>
+        <td>6437</td>
+      </tr>
+      <tr id="LC31" class="js-file-line">
+        <td id="L31" class="blob-num js-line-number" data-line-number="31"></td>
+        <td>Fantastic Four (2015)</td>
+        <td>3</td>
+        <td>2.7</td>
+        <td>6288</td>
+      </tr>
+      <tr id="LC32" class="js-file-line">
+        <td id="L32" class="blob-num js-line-number" data-line-number="32"></td>
+        <td>Terminator Genisys (2015)</td>
+        <td>4.5</td>
+        <td>4.2</td>
+        <td>6272</td>
+      </tr>
+      <tr id="LC33" class="js-file-line">
+        <td id="L33" class="blob-num js-line-number" data-line-number="33"></td>
+        <td>Get Hard (2015)</td>
+        <td>4</td>
+        <td>3.9</td>
+        <td>5933</td>
+      </tr>
+      <tr id="LC34" class="js-file-line">
+        <td id="L34" class="blob-num js-line-number" data-line-number="34"></td>
+        <td>Southpaw (2015)</td>
+        <td>5</td>
+        <td>4.6</td>
+        <td>5597</td>
+      </tr>
+      <tr id="LC35" class="js-file-line">
+        <td id="L35" class="blob-num js-line-number" data-line-number="35"></td>
+        <td>Night at the Museum: Secret of the Tomb (2014)</td>
+        <td>4.5</td>
+        <td>4.1</td>
+        <td>5445</td>
+      </tr>
+      <tr id="LC36" class="js-file-line">
+        <td id="L36" class="blob-num js-line-number" data-line-number="36"></td>
+        <td>Focus (2015)</td>
+        <td>4</td>
+        <td>3.9</td>
+        <td>4933</td>
+      </tr>
+      <tr id="LC37" class="js-file-line">
+        <td id="L37" class="blob-num js-line-number" data-line-number="37"></td>
+        <td>Pitch Perfect 2 (2015)</td>
+        <td>4.5</td>
+        <td>4.2</td>
+        <td>4577</td>
+      </tr>
+      <tr id="LC38" class="js-file-line">
+        <td id="L38" class="blob-num js-line-number" data-line-number="38"></td>
+        <td>The SpongeBob Movie: Sponge Out of Water (2015)</td>
+        <td>3.5</td>
+        <td>3.3</td>
+        <td>4493</td>
+      </tr>
+      <tr id="LC39" class="js-file-line">
+        <td id="L39" class="blob-num js-line-number" data-line-number="39"></td>
+        <td>Entourage (2015)</td>
+        <td>4.5</td>
+        <td>4.2</td>
+        <td>4279</td>
+      </tr>
+      <tr id="LC40" class="js-file-line">
+        <td id="L40" class="blob-num js-line-number" data-line-number="40"></td>
+        <td>Birdman (2014)</td>
+        <td>4</td>
+        <td>3.7</td>
+        <td>4194</td>
+      </tr>
+      <tr id="LC41" class="js-file-line">
+        <td id="L41" class="blob-num js-line-number" data-line-number="41"></td>
+        <td>Jupiter Ascending (2015)</td>
+        <td>3.5</td>
+        <td>3.4</td>
+        <td>4122</td>
+      </tr>
+      <tr id="LC42" class="js-file-line">
+        <td id="L42" class="blob-num js-line-number" data-line-number="42"></td>
+        <td>Paddington (2015)</td>
+        <td>4.5</td>
+        <td>4.3</td>
+        <td>4045</td>
+      </tr>
+      <tr id="LC43" class="js-file-line">
+        <td id="L43" class="blob-num js-line-number" data-line-number="43"></td>
+        <td>Pixels (2015)</td>
+        <td>4.5</td>
+        <td>4.1</td>
+        <td>3886</td>
+      </tr>
+      <tr id="LC44" class="js-file-line">
+        <td id="L44" class="blob-num js-line-number" data-line-number="44"></td>
+        <td>Vacation (2015)</td>
+        <td>4</td>
+        <td>3.8</td>
+        <td>3815</td>
+      </tr>
+      <tr id="LC45" class="js-file-line">
+        <td id="L45" class="blob-num js-line-number" data-line-number="45"></td>
+        <td>Dragon Ball Z: Resurrection &#39;F&#39; (2015)</td>
+        <td>5</td>
+        <td>4.8</td>
+        <td>3740</td>
+      </tr>
+      <tr id="LC46" class="js-file-line">
+        <td id="L46" class="blob-num js-line-number" data-line-number="46"></td>
+        <td>Chappie (2015)</td>
+        <td>4</td>
+        <td>3.8</td>
+        <td>3642</td>
+      </tr>
+      <tr id="LC47" class="js-file-line">
+        <td id="L47" class="blob-num js-line-number" data-line-number="47"></td>
+        <td>Ex Machina (2015)</td>
+        <td>4.5</td>
+        <td>4.1</td>
+        <td>3458</td>
+      </tr>
+      <tr id="LC48" class="js-file-line">
+        <td id="L48" class="blob-num js-line-number" data-line-number="48"></td>
+        <td>Max (2015)</td>
+        <td>4.5</td>
+        <td>4.5</td>
+        <td>3412</td>
+      </tr>
+      <tr id="LC49" class="js-file-line">
+        <td id="L49" class="blob-num js-line-number" data-line-number="49"></td>
+        <td>McFarland, USA (2015)</td>
+        <td>5</td>
+        <td>4.6</td>
+        <td>3364</td>
+      </tr>
+      <tr id="LC50" class="js-file-line">
+        <td id="L50" class="blob-num js-line-number" data-line-number="50"></td>
+        <td>The Age of Adaline (2015)</td>
+        <td>4.5</td>
+        <td>4.2</td>
+        <td>3325</td>
+      </tr>
+      <tr id="LC51" class="js-file-line">
+        <td id="L51" class="blob-num js-line-number" data-line-number="51"></td>
+        <td>Insidious: Chapter 3 (2015)</td>
+        <td>4.5</td>
+        <td>4.1</td>
+        <td>3276</td>
+      </tr>
+      <tr id="LC52" class="js-file-line">
+        <td id="L52" class="blob-num js-line-number" data-line-number="52"></td>
+        <td>Top Five (2014)</td>
+        <td>4</td>
+        <td>3.5</td>
+        <td>3223</td>
+      </tr>
+      <tr id="LC53" class="js-file-line">
+        <td id="L53" class="blob-num js-line-number" data-line-number="53"></td>
+        <td>Paul Blart: Mall Cop 2 (2015)</td>
+        <td>3.5</td>
+        <td>3.5</td>
+        <td>3054</td>
+      </tr>
+      <tr id="LC54" class="js-file-line">
+        <td id="L54" class="blob-num js-line-number" data-line-number="54"></td>
+        <td>The Boy Next Door (2015)</td>
+        <td>4</td>
+        <td>3.6</td>
+        <td>2800</td>
+      </tr>
+      <tr id="LC55" class="js-file-line">
+        <td id="L55" class="blob-num js-line-number" data-line-number="55"></td>
+        <td>Poltergeist (2015)</td>
+        <td>3</td>
+        <td>2.8</td>
+        <td>2704</td>
+      </tr>
+      <tr id="LC56" class="js-file-line">
+        <td id="L56" class="blob-num js-line-number" data-line-number="56"></td>
+        <td>The Man From U.N.C.L.E. (2015)</td>
+        <td>4.5</td>
+        <td>4.1</td>
+        <td>2686</td>
+      </tr>
+      <tr id="LC57" class="js-file-line">
+        <td id="L57" class="blob-num js-line-number" data-line-number="57"></td>
+        <td>The Gift (2015)</td>
+        <td>4</td>
+        <td>3.7</td>
+        <td>2680</td>
+      </tr>
+      <tr id="LC58" class="js-file-line">
+        <td id="L58" class="blob-num js-line-number" data-line-number="58"></td>
+        <td>Hot Pursuit (2015)</td>
+        <td>4</td>
+        <td>3.7</td>
+        <td>2618</td>
+      </tr>
+      <tr id="LC59" class="js-file-line">
+        <td id="L59" class="blob-num js-line-number" data-line-number="59"></td>
+        <td>The Longest Ride (2015)</td>
+        <td>4.5</td>
+        <td>4.5</td>
+        <td>2603</td>
+      </tr>
+      <tr id="LC60" class="js-file-line">
+        <td id="L60" class="blob-num js-line-number" data-line-number="60"></td>
+        <td>Unfriended (2015)</td>
+        <td>3</td>
+        <td>2.7</td>
+        <td>2507</td>
+      </tr>
+      <tr id="LC61" class="js-file-line">
+        <td id="L61" class="blob-num js-line-number" data-line-number="61"></td>
+        <td>Woman in Gold (2015)</td>
+        <td>4.5</td>
+        <td>4.4</td>
+        <td>2435</td>
+      </tr>
+      <tr id="LC62" class="js-file-line">
+        <td id="L62" class="blob-num js-line-number" data-line-number="62"></td>
+        <td>Aloha (2015)</td>
+        <td>3.5</td>
+        <td>3.1</td>
+        <td>2284</td>
+      </tr>
+      <tr id="LC63" class="js-file-line">
+        <td id="L63" class="blob-num js-line-number" data-line-number="63"></td>
+        <td>The DUFF (2015)</td>
+        <td>4.5</td>
+        <td>4.2</td>
+        <td>2273</td>
+      </tr>
+      <tr id="LC64" class="js-file-line">
+        <td id="L64" class="blob-num js-line-number" data-line-number="64"></td>
+        <td>Dope (2015)</td>
+        <td>4.5</td>
+        <td>4.3</td>
+        <td>2195</td>
+      </tr>
+      <tr id="LC65" class="js-file-line">
+        <td id="L65" class="blob-num js-line-number" data-line-number="65"></td>
+        <td>It Follows (2015)</td>
+        <td>3</td>
+        <td>2.9</td>
+        <td>2097</td>
+      </tr>
+      <tr id="LC66" class="js-file-line">
+        <td id="L66" class="blob-num js-line-number" data-line-number="66"></td>
+        <td>Run All Night (2015)</td>
+        <td>4.5</td>
+        <td>4.1</td>
+        <td>2066</td>
+      </tr>
+      <tr id="LC67" class="js-file-line">
+        <td id="L67" class="blob-num js-line-number" data-line-number="67"></td>
+        <td>Baahubali: The Beginning (2015)</td>
+        <td>5</td>
+        <td>4.6</td>
+        <td>1922</td>
+      </tr>
+      <tr id="LC68" class="js-file-line">
+        <td id="L68" class="blob-num js-line-number" data-line-number="68"></td>
+        <td>The Gallows (2015)</td>
+        <td>3</td>
+        <td>2.9</td>
+        <td>1896</td>
+      </tr>
+      <tr id="LC69" class="js-file-line">
+        <td id="L69" class="blob-num js-line-number" data-line-number="69"></td>
+        <td>The Second Best Exotic Marigold Hotel (2015)</td>
+        <td>4</td>
+        <td>3.9</td>
+        <td>1870</td>
+      </tr>
+      <tr id="LC70" class="js-file-line">
+        <td id="L70" class="blob-num js-line-number" data-line-number="70"></td>
+        <td>Black or White (2015)</td>
+        <td>4.5</td>
+        <td>4.2</td>
+        <td>1862</td>
+      </tr>
+      <tr id="LC71" class="js-file-line">
+        <td id="L71" class="blob-num js-line-number" data-line-number="71"></td>
+        <td>Project Almanac (2015)</td>
+        <td>4</td>
+        <td>3.7</td>
+        <td>1834</td>
+      </tr>
+      <tr id="LC72" class="js-file-line">
+        <td id="L72" class="blob-num js-line-number" data-line-number="72"></td>
+        <td>Do You Believe? (2015)</td>
+        <td>5</td>
+        <td>4.5</td>
+        <td>1793</td>
+      </tr>
+      <tr id="LC73" class="js-file-line">
+        <td id="L73" class="blob-num js-line-number" data-line-number="73"></td>
+        <td>Paper Towns (2015)</td>
+        <td>4</td>
+        <td>3.8</td>
+        <td>1750</td>
+      </tr>
+      <tr id="LC74" class="js-file-line">
+        <td id="L74" class="blob-num js-line-number" data-line-number="74"></td>
+        <td>The Lazarus Effect (2015)</td>
+        <td>3</td>
+        <td>3</td>
+        <td>1651</td>
+      </tr>
+      <tr id="LC75" class="js-file-line">
+        <td id="L75" class="blob-num js-line-number" data-line-number="75"></td>
+        <td>Big Eyes (2014)</td>
+        <td>4</td>
+        <td>3.8</td>
+        <td>1501</td>
+      </tr>
+      <tr id="LC76" class="js-file-line">
+        <td id="L76" class="blob-num js-line-number" data-line-number="76"></td>
+        <td>Ricki and the Flash (2015)</td>
+        <td>4</td>
+        <td>3.7</td>
+        <td>1462</td>
+      </tr>
+      <tr id="LC77" class="js-file-line">
+        <td id="L77" class="blob-num js-line-number" data-line-number="77"></td>
+        <td>Blackhat (2015)</td>
+        <td>3</td>
+        <td>2.8</td>
+        <td>1430</td>
+      </tr>
+      <tr id="LC78" class="js-file-line">
+        <td id="L78" class="blob-num js-line-number" data-line-number="78"></td>
+        <td>Self/less (2015)</td>
+        <td>4</td>
+        <td>3.8</td>
+        <td>1415</td>
+      </tr>
+      <tr id="LC79" class="js-file-line">
+        <td id="L79" class="blob-num js-line-number" data-line-number="79"></td>
+        <td>Mr. Holmes (2015)</td>
+        <td>4</td>
+        <td>4</td>
+        <td>1348</td>
+      </tr>
+      <tr id="LC80" class="js-file-line">
+        <td id="L80" class="blob-num js-line-number" data-line-number="80"></td>
+        <td>The Woman In Black 2 Angel of Death (2015)</td>
+        <td>3</td>
+        <td>3</td>
+        <td>1333</td>
+      </tr>
+      <tr id="LC81" class="js-file-line">
+        <td id="L81" class="blob-num js-line-number" data-line-number="81"></td>
+        <td>Still Alice (2015)</td>
+        <td>4.5</td>
+        <td>4.1</td>
+        <td>1258</td>
+      </tr>
+      <tr id="LC82" class="js-file-line">
+        <td id="L82" class="blob-num js-line-number" data-line-number="82"></td>
+        <td>Seventh Son (2015)</td>
+        <td>3.5</td>
+        <td>3.2</td>
+        <td>1213</td>
+      </tr>
+      <tr id="LC83" class="js-file-line">
+        <td id="L83" class="blob-num js-line-number" data-line-number="83"></td>
+        <td>Mortdecai (2015)</td>
+        <td>3.5</td>
+        <td>3.2</td>
+        <td>1196</td>
+      </tr>
+      <tr id="LC84" class="js-file-line">
+        <td id="L84" class="blob-num js-line-number" data-line-number="84"></td>
+        <td>Strange Magic (2015)</td>
+        <td>3.5</td>
+        <td>3.4</td>
+        <td>1117</td>
+      </tr>
+      <tr id="LC85" class="js-file-line">
+        <td id="L85" class="blob-num js-line-number" data-line-number="85"></td>
+        <td>Inherent Vice (2014)</td>
+        <td>3</td>
+        <td>2.9</td>
+        <td>1078</td>
+      </tr>
+      <tr id="LC86" class="js-file-line">
+        <td id="L86" class="blob-num js-line-number" data-line-number="86"></td>
+        <td>Bajrangi Bhaijaan (2015)</td>
+        <td>5</td>
+        <td>4.6</td>
+        <td>1035</td>
+      </tr>
+      <tr id="LC87" class="js-file-line">
+        <td id="L87" class="blob-num js-line-number" data-line-number="87"></td>
+        <td>Hot Tub Time Machine 2 (2015)</td>
+        <td>3.5</td>
+        <td>3</td>
+        <td>1021</td>
+      </tr>
+      <tr id="LC88" class="js-file-line">
+        <td id="L88" class="blob-num js-line-number" data-line-number="88"></td>
+        <td>The Gunman (2015)</td>
+        <td>3.5</td>
+        <td>3.4</td>
+        <td>996</td>
+      </tr>
+      <tr id="LC89" class="js-file-line">
+        <td id="L89" class="blob-num js-line-number" data-line-number="89"></td>
+        <td>Sinister 2 (2015)</td>
+        <td>3.5</td>
+        <td>3.3</td>
+        <td>973</td>
+      </tr>
+      <tr id="LC90" class="js-file-line">
+        <td id="L90" class="blob-num js-line-number" data-line-number="90"></td>
+        <td>Hitman: Agent 47 (2015)</td>
+        <td>4</td>
+        <td>3.9</td>
+        <td>917</td>
+      </tr>
+      <tr id="LC91" class="js-file-line">
+        <td id="L91" class="blob-num js-line-number" data-line-number="91"></td>
+        <td>Shaun the Sheep Movie (2015)</td>
+        <td>4.5</td>
+        <td>4</td>
+        <td>896</td>
+      </tr>
+      <tr id="LC92" class="js-file-line">
+        <td id="L92" class="blob-num js-line-number" data-line-number="92"></td>
+        <td>Love &amp; Mercy (2015)</td>
+        <td>4.5</td>
+        <td>4</td>
+        <td>864</td>
+      </tr>
+      <tr id="LC93" class="js-file-line">
+        <td id="L93" class="blob-num js-line-number" data-line-number="93"></td>
+        <td>Unfinished Business (2015)</td>
+        <td>3.5</td>
+        <td>3.2</td>
+        <td>821</td>
+      </tr>
+      <tr id="LC94" class="js-file-line">
+        <td id="L94" class="blob-num js-line-number" data-line-number="94"></td>
+        <td>The Loft (2015)</td>
+        <td>4</td>
+        <td>3.6</td>
+        <td>811</td>
+      </tr>
+      <tr id="LC95" class="js-file-line">
+        <td id="L95" class="blob-num js-line-number" data-line-number="95"></td>
+        <td>Little Boy (2015)</td>
+        <td>4.5</td>
+        <td>4.3</td>
+        <td>811</td>
+      </tr>
+      <tr id="LC96" class="js-file-line">
+        <td id="L96" class="blob-num js-line-number" data-line-number="96"></td>
+        <td>Far From The Madding Crowd (2015)</td>
+        <td>4.5</td>
+        <td>4</td>
+        <td>804</td>
+      </tr>
+      <tr id="LC97" class="js-file-line">
+        <td id="L97" class="blob-num js-line-number" data-line-number="97"></td>
+        <td>Amy (2015)</td>
+        <td>4.5</td>
+        <td>4.4</td>
+        <td>729</td>
+      </tr>
+      <tr id="LC98" class="js-file-line">
+        <td id="L98" class="blob-num js-line-number" data-line-number="98"></td>
+        <td>TCM presents Jaws 40th Anniversary (2015)</td>
+        <td>5</td>
+        <td>4.8</td>
+        <td>716</td>
+      </tr>
+      <tr id="LC99" class="js-file-line">
+        <td id="L99" class="blob-num js-line-number" data-line-number="99"></td>
+        <td>Monkey Kingdom (2015)</td>
+        <td>4.5</td>
+        <td>4.2</td>
+        <td>701</td>
+      </tr>
+      <tr id="LC100" class="js-file-line">
+        <td id="L100" class="blob-num js-line-number" data-line-number="100"></td>
+        <td>A Most Violent Year (2014)</td>
+        <td>3.5</td>
+        <td>3.4</td>
+        <td>675</td>
+      </tr>
+      <tr id="LC101" class="js-file-line">
+        <td id="L101" class="blob-num js-line-number" data-line-number="101"></td>
+        <td>American Ultra (2015)</td>
+        <td>4</td>
+        <td>3.7</td>
+        <td>638</td>
+      </tr>
+      <tr id="LC102" class="js-file-line">
+        <td id="L102" class="blob-num js-line-number" data-line-number="102"></td>
+        <td>Me and Earl and The Dying Girl (2015)</td>
+        <td>4.5</td>
+        <td>4.3</td>
+        <td>624</td>
+      </tr>
+      <tr id="LC103" class="js-file-line">
+        <td id="L103" class="blob-num js-line-number" data-line-number="103"></td>
+        <td>True Story (2015)</td>
+        <td>3.5</td>
+        <td>3.2</td>
+        <td>540</td>
+      </tr>
+      <tr id="LC104" class="js-file-line">
+        <td id="L104" class="blob-num js-line-number" data-line-number="104"></td>
+        <td>A La Mala (2015)</td>
+        <td>5</td>
+        <td>4.6</td>
+        <td>536</td>
+      </tr>
+      <tr id="LC105" class="js-file-line">
+        <td id="L105" class="blob-num js-line-number" data-line-number="105"></td>
+        <td>Danny Collins (2015)</td>
+        <td>4</td>
+        <td>4</td>
+        <td>531</td>
+      </tr>
+      <tr id="LC106" class="js-file-line">
+        <td id="L106" class="blob-num js-line-number" data-line-number="106"></td>
+        <td>Srimanthudu (2015)</td>
+        <td>4.5</td>
+        <td>4.1</td>
+        <td>496</td>
+      </tr>
+      <tr id="LC107" class="js-file-line">
+        <td id="L107" class="blob-num js-line-number" data-line-number="107"></td>
+        <td>Cake (2015)</td>
+        <td>3.5</td>
+        <td>3.4</td>
+        <td>482</td>
+      </tr>
+      <tr id="LC108" class="js-file-line">
+        <td id="L108" class="blob-num js-line-number" data-line-number="108"></td>
+        <td>Spare Parts (2015)</td>
+        <td>4.5</td>
+        <td>4.5</td>
+        <td>450</td>
+      </tr>
+      <tr id="LC109" class="js-file-line">
+        <td id="L109" class="blob-num js-line-number" data-line-number="109"></td>
+        <td>While We&#39;re Young (2015)</td>
+        <td>3</td>
+        <td>2.9</td>
+        <td>449</td>
+      </tr>
+      <tr id="LC110" class="js-file-line">
+        <td id="L110" class="blob-num js-line-number" data-line-number="110"></td>
+        <td>The Last: Naruto the Movie (2015)</td>
+        <td>5</td>
+        <td>4.8</td>
+        <td>409</td>
+      </tr>
+      <tr id="LC111" class="js-file-line">
+        <td id="L111" class="blob-num js-line-number" data-line-number="111"></td>
+        <td>Tanu Weds Manu Returns (2015)</td>
+        <td>4.5</td>
+        <td>4.5</td>
+        <td>400</td>
+      </tr>
+      <tr id="LC112" class="js-file-line">
+        <td id="L112" class="blob-num js-line-number" data-line-number="112"></td>
+        <td>The Water Diviner (2015)</td>
+        <td>4.5</td>
+        <td>4</td>
+        <td>397</td>
+      </tr>
+      <tr id="LC113" class="js-file-line">
+        <td id="L113" class="blob-num js-line-number" data-line-number="113"></td>
+        <td>The Breakfast Club 30th Anniversary (2015)</td>
+        <td>5</td>
+        <td>4.9</td>
+        <td>381</td>
+      </tr>
+      <tr id="LC114" class="js-file-line">
+        <td id="L114" class="blob-num js-line-number" data-line-number="114"></td>
+        <td>DIl Dhadakne Do (2015)</td>
+        <td>4</td>
+        <td>4</td>
+        <td>316</td>
+      </tr>
+      <tr id="LC115" class="js-file-line">
+        <td id="L115" class="blob-num js-line-number" data-line-number="115"></td>
+        <td>Child 44 (2015)</td>
+        <td>4</td>
+        <td>3.7</td>
+        <td>308</td>
+      </tr>
+      <tr id="LC116" class="js-file-line">
+        <td id="L116" class="blob-num js-line-number" data-line-number="116"></td>
+        <td>Mr. Turner (2014)</td>
+        <td>3.5</td>
+        <td>3.2</td>
+        <td>290</td>
+      </tr>
+      <tr id="LC117" class="js-file-line">
+        <td id="L117" class="blob-num js-line-number" data-line-number="117"></td>
+        <td>I&#39;ll See You In My Dreams (2015)</td>
+        <td>4</td>
+        <td>3.6</td>
+        <td>281</td>
+      </tr>
+      <tr id="LC118" class="js-file-line">
+        <td id="L118" class="blob-num js-line-number" data-line-number="118"></td>
+        <td>Star Wars: Episode VII - The Force Awakens (2015)</td>
+        <td>5</td>
+        <td>4.7</td>
+        <td>261</td>
+      </tr>
+      <tr id="LC119" class="js-file-line">
+        <td id="L119" class="blob-num js-line-number" data-line-number="119"></td>
+        <td>What We Do in the Shadows (2015)</td>
+        <td>4.5</td>
+        <td>4.3</td>
+        <td>259</td>
+      </tr>
+      <tr id="LC120" class="js-file-line">
+        <td id="L120" class="blob-num js-line-number" data-line-number="120"></td>
+        <td>Irrational Man (2015)</td>
+        <td>4</td>
+        <td>3.5</td>
+        <td>252</td>
+      </tr>
+      <tr id="LC121" class="js-file-line">
+        <td id="L121" class="blob-num js-line-number" data-line-number="121"></td>
+        <td>Wild Tales (2014)</td>
+        <td>4.5</td>
+        <td>4.1</td>
+        <td>235</td>
+      </tr>
+      <tr id="LC122" class="js-file-line">
+        <td id="L122" class="blob-num js-line-number" data-line-number="122"></td>
+        <td>Where Hope Grows (2015)</td>
+        <td>4.5</td>
+        <td>4.3</td>
+        <td>225</td>
+      </tr>
+      <tr id="LC123" class="js-file-line">
+        <td id="L123" class="blob-num js-line-number" data-line-number="123"></td>
+        <td>TCM presents Grease Sing-A-Long (2015)</td>
+        <td>5</td>
+        <td>4.6</td>
+        <td>219</td>
+      </tr>
+      <tr id="LC124" class="js-file-line">
+        <td id="L124" class="blob-num js-line-number" data-line-number="124"></td>
+        <td>Black Sea (2015)</td>
+        <td>4</td>
+        <td>3.5</td>
+        <td>218</td>
+      </tr>
+      <tr id="LC125" class="js-file-line">
+        <td id="L125" class="blob-num js-line-number" data-line-number="125"></td>
+        <td>NT Live: The Audience (2015)</td>
+        <td>5</td>
+        <td>4.7</td>
+        <td>215</td>
+      </tr>
+      <tr id="LC126" class="js-file-line">
+        <td id="L126" class="blob-num js-line-number" data-line-number="126"></td>
+        <td>The Vatican Tapes (2015)</td>
+        <td>3</td>
+        <td>2.9</td>
+        <td>210</td>
+      </tr>
+      <tr id="LC127" class="js-file-line">
+        <td id="L127" class="blob-num js-line-number" data-line-number="127"></td>
+        <td>&#39;71 (2015)</td>
+        <td>3.5</td>
+        <td>3.5</td>
+        <td>192</td>
+      </tr>
+      <tr id="LC128" class="js-file-line">
+        <td id="L128" class="blob-num js-line-number" data-line-number="128"></td>
+        <td>Beyond the Mask (2015)</td>
+        <td>4.5</td>
+        <td>4.4</td>
+        <td>189</td>
+      </tr>
+      <tr id="LC129" class="js-file-line">
+        <td id="L129" class="blob-num js-line-number" data-line-number="129"></td>
+        <td>Faith Of Our Fathers (2015)</td>
+        <td>4</td>
+        <td>3.9</td>
+        <td>186</td>
+      </tr>
+      <tr id="LC130" class="js-file-line">
+        <td id="L130" class="blob-num js-line-number" data-line-number="130"></td>
+        <td>Chocolate City (2015)</td>
+        <td>4</td>
+        <td>3.8</td>
+        <td>176</td>
+      </tr>
+      <tr id="LC131" class="js-file-line">
+        <td id="L131" class="blob-num js-line-number" data-line-number="131"></td>
+        <td>Clouds of Sils Maria (2015)</td>
+        <td>3.5</td>
+        <td>3.4</td>
+        <td>162</td>
+      </tr>
+      <tr id="LC132" class="js-file-line">
+        <td id="L132" class="blob-num js-line-number" data-line-number="132"></td>
+        <td>TCM presents Double Indemnity (2015)</td>
+        <td>5</td>
+        <td>4.8</td>
+        <td>131</td>
+      </tr>
+      <tr id="LC133" class="js-file-line">
+        <td id="L133" class="blob-num js-line-number" data-line-number="133"></td>
+        <td>DCI 2015 Tour Premiere (2015)</td>
+        <td>5</td>
+        <td>4.7</td>
+        <td>128</td>
+      </tr>
+      <tr id="LC134" class="js-file-line">
+        <td id="L134" class="blob-num js-line-number" data-line-number="134"></td>
+        <td>Testament of Youth (2015)</td>
+        <td>4</td>
+        <td>3.9</td>
+        <td>127</td>
+      </tr>
+      <tr id="LC135" class="js-file-line">
+        <td id="L135" class="blob-num js-line-number" data-line-number="135"></td>
+        <td>Infinitely Polar Bear (2015)</td>
+        <td>4</td>
+        <td>3.9</td>
+        <td>124</td>
+      </tr>
+      <tr id="LC136" class="js-file-line">
+        <td id="L136" class="blob-num js-line-number" data-line-number="136"></td>
+        <td>David and Goliath (2015)</td>
+        <td>3.5</td>
+        <td>3.2</td>
+        <td>123</td>
+      </tr>
+      <tr id="LC137" class="js-file-line">
+        <td id="L137" class="blob-num js-line-number" data-line-number="137"></td>
+        <td>The End of the Tour (2015)</td>
+        <td>4.5</td>
+        <td>4.1</td>
+        <td>121</td>
+      </tr>
+      <tr id="LC138" class="js-file-line">
+        <td id="L138" class="blob-num js-line-number" data-line-number="138"></td>
+        <td>Two Days, One Night (2014)</td>
+        <td>3.5</td>
+        <td>3.5</td>
+        <td>118</td>
+      </tr>
+      <tr id="LC139" class="js-file-line">
+        <td id="L139" class="blob-num js-line-number" data-line-number="139"></td>
+        <td>Drishyam (2015)</td>
+        <td>4.5</td>
+        <td>4.4</td>
+        <td>117</td>
+      </tr>
+      <tr id="LC140" class="js-file-line">
+        <td id="L140" class="blob-num js-line-number" data-line-number="140"></td>
+        <td>Bolshoi Ballet: Swan Lake (2015)</td>
+        <td>4.5</td>
+        <td>4.1</td>
+        <td>112</td>
+      </tr>
+      <tr id="LC141" class="js-file-line">
+        <td id="L141" class="blob-num js-line-number" data-line-number="141"></td>
+        <td>Insider Access to Disney Pixarâ€™s Inside Out (2015)</td>
+        <td>5</td>
+        <td>4.7</td>
+        <td>110</td>
+      </tr>
+      <tr id="LC142" class="js-file-line">
+        <td id="L142" class="blob-num js-line-number" data-line-number="142"></td>
+        <td>The Overnight (2015)</td>
+        <td>3.5</td>
+        <td>3.3</td>
+        <td>110</td>
+      </tr>
+      <tr id="LC143" class="js-file-line">
+        <td id="L143" class="blob-num js-line-number" data-line-number="143"></td>
+        <td>Detective Byomkesh Bakshy (2015)</td>
+        <td>4</td>
+        <td>3.9</td>
+        <td>109</td>
+      </tr>
+      <tr id="LC144" class="js-file-line">
+        <td id="L144" class="blob-num js-line-number" data-line-number="144"></td>
+        <td>The Last Five Years (2015)</td>
+        <td>4.5</td>
+        <td>4.4</td>
+        <td>99</td>
+      </tr>
+      <tr id="LC145" class="js-file-line">
+        <td id="L145" class="blob-num js-line-number" data-line-number="145"></td>
+        <td>Maggie (2015)</td>
+        <td>3.5</td>
+        <td>3.3</td>
+        <td>95</td>
+      </tr>
+      <tr id="LC146" class="js-file-line">
+        <td id="L146" class="blob-num js-line-number" data-line-number="146"></td>
+        <td>RangiTaranga (2015)</td>
+        <td>5</td>
+        <td>4.8</td>
+        <td>85</td>
+      </tr>
+      <tr id="LC147" class="js-file-line">
+        <td id="L147" class="blob-num js-line-number" data-line-number="147"></td>
+        <td>Ode to My Father (2014)</td>
+        <td>5</td>
+        <td>4.6</td>
+        <td>83</td>
+      </tr>
+      <tr id="LC148" class="js-file-line">
+        <td id="L148" class="blob-num js-line-number" data-line-number="148"></td>
+        <td>The Salt of the Earth (2015)</td>
+        <td>4.5</td>
+        <td>4.3</td>
+        <td>83</td>
+      </tr>
+      <tr id="LC149" class="js-file-line">
+        <td id="L149" class="blob-num js-line-number" data-line-number="149"></td>
+        <td>A Little Chaos (2015)</td>
+        <td>4</td>
+        <td>3.9</td>
+        <td>83</td>
+      </tr>
+      <tr id="LC150" class="js-file-line">
+        <td id="L150" class="blob-num js-line-number" data-line-number="150"></td>
+        <td>Angrej (2015)</td>
+        <td>5</td>
+        <td>4.8</td>
+        <td>80</td>
+      </tr>
+      <tr id="LC151" class="js-file-line">
+        <td id="L151" class="blob-num js-line-number" data-line-number="151"></td>
+        <td>5 Flights Up (2015)</td>
+        <td>4</td>
+        <td>3.6</td>
+        <td>79</td>
+      </tr>
+      <tr id="LC152" class="js-file-line">
+        <td id="L152" class="blob-num js-line-number" data-line-number="152"></td>
+        <td>Dior and I (2015)</td>
+        <td>4</td>
+        <td>4</td>
+        <td>75</td>
+      </tr>
+      <tr id="LC153" class="js-file-line">
+        <td id="L153" class="blob-num js-line-number" data-line-number="153"></td>
+        <td>Timbuktu (2015)</td>
+        <td>4</td>
+        <td>3.6</td>
+        <td>74</td>
+      </tr>
+      <tr id="LC154" class="js-file-line">
+        <td id="L154" class="blob-num js-line-number" data-line-number="154"></td>
+        <td>Brothers: Blood Against Blood (2015)</td>
+        <td>4</td>
+        <td>4</td>
+        <td>74</td>
+      </tr>
+      <tr id="LC155" class="js-file-line">
+        <td id="L155" class="blob-num js-line-number" data-line-number="155"></td>
+        <td>Phoenix (2015)</td>
+        <td>3.5</td>
+        <td>3.4</td>
+        <td>70</td>
+      </tr>
+      <tr id="LC156" class="js-file-line">
+        <td id="L156" class="blob-num js-line-number" data-line-number="156"></td>
+        <td>Above and Beyond (2015)</td>
+        <td>4.5</td>
+        <td>4.4</td>
+        <td>70</td>
+      </tr>
+      <tr id="LC157" class="js-file-line">
+        <td id="L157" class="blob-num js-line-number" data-line-number="157"></td>
+        <td>Bolshoi Ballet: The Nutcracker (2014)</td>
+        <td>4.5</td>
+        <td>4.4</td>
+        <td>70</td>
+      </tr>
+      <tr id="LC158" class="js-file-line">
+        <td id="L158" class="blob-num js-line-number" data-line-number="158"></td>
+        <td>Bolshoi Ballet: Romeo And Juliet (2015)</td>
+        <td>4.5</td>
+        <td>4.2</td>
+        <td>68</td>
+      </tr>
+      <tr id="LC159" class="js-file-line">
+        <td id="L159" class="blob-num js-line-number" data-line-number="159"></td>
+        <td>A Girl Like Her (2015)</td>
+        <td>4.5</td>
+        <td>4.2</td>
+        <td>66</td>
+      </tr>
+      <tr id="LC160" class="js-file-line">
+        <td id="L160" class="blob-num js-line-number" data-line-number="160"></td>
+        <td>Song of the Sea (2014)</td>
+        <td>4.5</td>
+        <td>4.3</td>
+        <td>66</td>
+      </tr>
+      <tr id="LC161" class="js-file-line">
+        <td id="L161" class="blob-num js-line-number" data-line-number="161"></td>
+        <td>The Wolfpack (2015)</td>
+        <td>3.5</td>
+        <td>3.4</td>
+        <td>66</td>
+      </tr>
+      <tr id="LC162" class="js-file-line">
+        <td id="L162" class="blob-num js-line-number" data-line-number="162"></td>
+        <td>Effie Gray (2015)</td>
+        <td>3</td>
+        <td>2.8</td>
+        <td>65</td>
+      </tr>
+      <tr id="LC163" class="js-file-line">
+        <td id="L163" class="blob-num js-line-number" data-line-number="163"></td>
+        <td>Leviathan (2014)</td>
+        <td>4</td>
+        <td>3.5</td>
+        <td>64</td>
+      </tr>
+      <tr id="LC164" class="js-file-line">
+        <td id="L164" class="blob-num js-line-number" data-line-number="164"></td>
+        <td>Cartel Land (2015)</td>
+        <td>4.5</td>
+        <td>4.2</td>
+        <td>64</td>
+      </tr>
+      <tr id="LC165" class="js-file-line">
+        <td id="L165" class="blob-num js-line-number" data-line-number="165"></td>
+        <td>Sardaar Ji (2015)</td>
+        <td>4.5</td>
+        <td>4.4</td>
+        <td>64</td>
+      </tr>
+      <tr id="LC166" class="js-file-line">
+        <td id="L166" class="blob-num js-line-number" data-line-number="166"></td>
+        <td>Classic Music Series: Led Zeppelin (2015)</td>
+        <td>4.5</td>
+        <td>4.5</td>
+        <td>64</td>
+      </tr>
+      <tr id="LC167" class="js-file-line">
+        <td id="L167" class="blob-num js-line-number" data-line-number="167"></td>
+        <td>The 100-Year-Old Man Who Climbed Out the Window and Disappeared (2015)</td>
+        <td>4</td>
+        <td>3.9</td>
+        <td>63</td>
+      </tr>
+      <tr id="LC168" class="js-file-line">
+        <td id="L168" class="blob-num js-line-number" data-line-number="168"></td>
+        <td>Exhibition OnScreen: The Impressionists (2015)</td>
+        <td>4</td>
+        <td>4</td>
+        <td>62</td>
+      </tr>
+      <tr id="LC169" class="js-file-line">
+        <td id="L169" class="blob-num js-line-number" data-line-number="169"></td>
+        <td>The Hunger Games: Mockingjay - Part 2 (2015)</td>
+        <td>5</td>
+        <td>4.7</td>
+        <td>61</td>
+      </tr>
+      <tr id="LC170" class="js-file-line">
+        <td id="L170" class="blob-num js-line-number" data-line-number="170"></td>
+        <td>Kick 2 (2015)</td>
+        <td>3</td>
+        <td>2.7</td>
+        <td>60</td>
+      </tr>
+      <tr id="LC171" class="js-file-line">
+        <td id="L171" class="blob-num js-line-number" data-line-number="171"></td>
+        <td>Royal Ballet: Swan Lake (2015)</td>
+        <td>5</td>
+        <td>4.5</td>
+        <td>59</td>
+      </tr>
+      <tr id="LC172" class="js-file-line">
+        <td id="L172" class="blob-num js-line-number" data-line-number="172"></td>
+        <td>Iris (2015)</td>
+        <td>4</td>
+        <td>3.8</td>
+        <td>59</td>
+      </tr>
+      <tr id="LC173" class="js-file-line">
+        <td id="L173" class="blob-num js-line-number" data-line-number="173"></td>
+        <td>Gett: The Trial of Viviane Amsalem (2015)</td>
+        <td>3.5</td>
+        <td>3.5</td>
+        <td>59</td>
+      </tr>
+      <tr id="LC174" class="js-file-line">
+        <td id="L174" class="blob-num js-line-number" data-line-number="174"></td>
+        <td>ABCD 2 (2015)</td>
+        <td>4</td>
+        <td>3.8</td>
+        <td>58</td>
+      </tr>
+      <tr id="LC175" class="js-file-line">
+        <td id="L175" class="blob-num js-line-number" data-line-number="175"></td>
+        <td>War Room (2015)</td>
+        <td>4</td>
+        <td>3.8</td>
+        <td>58</td>
+      </tr>
+      <tr id="LC176" class="js-file-line">
+        <td id="L176" class="blob-num js-line-number" data-line-number="176"></td>
+        <td>Assassination (2015)</td>
+        <td>5</td>
+        <td>4.6</td>
+        <td>57</td>
+      </tr>
+      <tr id="LC177" class="js-file-line">
+        <td id="L177" class="blob-num js-line-number" data-line-number="177"></td>
+        <td>Welcome to Me (2015)</td>
+        <td>4</td>
+        <td>3.6</td>
+        <td>56</td>
+      </tr>
+      <tr id="LC178" class="js-file-line">
+        <td id="L178" class="blob-num js-line-number" data-line-number="178"></td>
+        <td>The Metropolitan Opera: Iolanta/Duke Bluebeard&#39;s Castle (2015)</td>
+        <td>4</td>
+        <td>3.7</td>
+        <td>56</td>
+      </tr>
+      <tr id="LC179" class="js-file-line">
+        <td id="L179" class="blob-num js-line-number" data-line-number="179"></td>
+        <td>Dark Places (2015)</td>
+        <td>4</td>
+        <td>3.7</td>
+        <td>55</td>
+      </tr>
+      <tr id="LC180" class="js-file-line">
+        <td id="L180" class="blob-num js-line-number" data-line-number="180"></td>
+        <td>Red Army (2015)</td>
+        <td>4.5</td>
+        <td>4.1</td>
+        <td>54</td>
+      </tr>
+      <tr id="LC181" class="js-file-line">
+        <td id="L181" class="blob-num js-line-number" data-line-number="181"></td>
+        <td>Deli Man (2015)</td>
+        <td>4</td>
+        <td>3.8</td>
+        <td>54</td>
+      </tr>
+      <tr id="LC182" class="js-file-line">
+        <td id="L182" class="blob-num js-line-number" data-line-number="182"></td>
+        <td>The Stanford Prison Experiment (2015)</td>
+        <td>4</td>
+        <td>3.9</td>
+        <td>51</td>
+      </tr>
+      <tr id="LC183" class="js-file-line">
+        <td id="L183" class="blob-num js-line-number" data-line-number="183"></td>
+        <td>Exhibition OnScreen: Vincent Van Gogh (2015)</td>
+        <td>4.5</td>
+        <td>4.1</td>
+        <td>50</td>
+      </tr>
+      <tr id="LC184" class="js-file-line">
+        <td id="L184" class="blob-num js-line-number" data-line-number="184"></td>
+        <td>Unity (2015)</td>
+        <td>4.5</td>
+        <td>4.2</td>
+        <td>50</td>
+      </tr>
+      <tr id="LC185" class="js-file-line">
+        <td id="L185" class="blob-num js-line-number" data-line-number="185"></td>
+        <td>Spectre (2015)</td>
+        <td>4.5</td>
+        <td>4.3</td>
+        <td>50</td>
+      </tr>
+      <tr id="LC186" class="js-file-line">
+        <td id="L186" class="blob-num js-line-number" data-line-number="186"></td>
+        <td>Bin Roye (2015)</td>
+        <td>4.5</td>
+        <td>4.4</td>
+        <td>50</td>
+      </tr>
+      <tr id="LC187" class="js-file-line">
+        <td id="L187" class="blob-num js-line-number" data-line-number="187"></td>
+        <td>Serena (2015)</td>
+        <td>3</td>
+        <td>3</td>
+        <td>50</td>
+      </tr>
+      <tr id="LC188" class="js-file-line">
+        <td id="L188" class="blob-num js-line-number" data-line-number="188"></td>
+        <td>Escobar: Paradise Lost (2015)</td>
+        <td>4</td>
+        <td>3.9</td>
+        <td>48</td>
+      </tr>
+      <tr id="LC189" class="js-file-line">
+        <td id="L189" class="blob-num js-line-number" data-line-number="189"></td>
+        <td>When Marnie Was There (2015)</td>
+        <td>4.5</td>
+        <td>4.1</td>
+        <td>46</td>
+      </tr>
+      <tr id="LC190" class="js-file-line">
+        <td id="L190" class="blob-num js-line-number" data-line-number="190"></td>
+        <td>Felix and Meira (2015)</td>
+        <td>3.5</td>
+        <td>3.2</td>
+        <td>46</td>
+      </tr>
+      <tr id="LC191" class="js-file-line">
+        <td id="L191" class="blob-num js-line-number" data-line-number="191"></td>
+        <td>Exhibition OnScreen: Matisse (2015)</td>
+        <td>4.5</td>
+        <td>4</td>
+        <td>45</td>
+      </tr>
+      <tr id="LC192" class="js-file-line">
+        <td id="L192" class="blob-num js-line-number" data-line-number="192"></td>
+        <td>Twinsters (2015)</td>
+        <td>5</td>
+        <td>4.5</td>
+        <td>44</td>
+      </tr>
+      <tr id="LC193" class="js-file-line">
+        <td id="L193" class="blob-num js-line-number" data-line-number="193"></td>
+        <td>Meru (2015)</td>
+        <td>4.5</td>
+        <td>4.5</td>
+        <td>44</td>
+      </tr>
+      <tr id="LC194" class="js-file-line">
+        <td id="L194" class="blob-num js-line-number" data-line-number="194"></td>
+        <td>Saint Laurent (2015)</td>
+        <td>3.5</td>
+        <td>3.1</td>
+        <td>43</td>
+      </tr>
+      <tr id="LC195" class="js-file-line">
+        <td id="L195" class="blob-num js-line-number" data-line-number="195"></td>
+        <td>About Elly (2015)</td>
+        <td>4</td>
+        <td>3.6</td>
+        <td>43</td>
+      </tr>
+      <tr id="LC196" class="js-file-line">
+        <td id="L196" class="blob-num js-line-number" data-line-number="196"></td>
+        <td>Masss (2015)</td>
+        <td>4</td>
+        <td>3.7</td>
+        <td>43</td>
+      </tr>
+      <tr id="LC197" class="js-file-line">
+        <td id="L197" class="blob-num js-line-number" data-line-number="197"></td>
+        <td>The Hunting Ground (2015)</td>
+        <td>4.5</td>
+        <td>4.1</td>
+        <td>42</td>
+      </tr>
+      <tr id="LC198" class="js-file-line">
+        <td id="L198" class="blob-num js-line-number" data-line-number="198"></td>
+        <td>Merchants of Doubt (2014)</td>
+        <td>4</td>
+        <td>3.7</td>
+        <td>42</td>
+      </tr>
+      <tr id="LC199" class="js-file-line">
+        <td id="L199" class="blob-num js-line-number" data-line-number="199"></td>
+        <td>Hamari Adhuri Kahani (2015)</td>
+        <td>4.5</td>
+        <td>4.1</td>
+        <td>41</td>
+      </tr>
+      <tr id="LC200" class="js-file-line">
+        <td id="L200" class="blob-num js-line-number" data-line-number="200"></td>
+        <td>Seymour: An Introduction (2015)</td>
+        <td>4.5</td>
+        <td>4.2</td>
+        <td>41</td>
+      </tr>
+      <tr id="LC201" class="js-file-line">
+        <td id="L201" class="blob-num js-line-number" data-line-number="201"></td>
+        <td>Kumiko, The Treasure Hunter (2015)</td>
+        <td>3.5</td>
+        <td>3.5</td>
+        <td>41</td>
+      </tr>
+      <tr id="LC202" class="js-file-line">
+        <td id="L202" class="blob-num js-line-number" data-line-number="202"></td>
+        <td>Premam (2015)</td>
+        <td>5</td>
+        <td>4.5</td>
+        <td>40</td>
+      </tr>
+      <tr id="LC203" class="js-file-line">
+        <td id="L203" class="blob-num js-line-number" data-line-number="203"></td>
+        <td>NH 10 (2015)</td>
+        <td>3.5</td>
+        <td>3.2</td>
+        <td>39</td>
+      </tr>
+      <tr id="LC204" class="js-file-line">
+        <td id="L204" class="blob-num js-line-number" data-line-number="204"></td>
+        <td>The Diary of a Teenage Girl (2015)</td>
+        <td>4</td>
+        <td>3.6</td>
+        <td>38</td>
+      </tr>
+      <tr id="LC205" class="js-file-line">
+        <td id="L205" class="blob-num js-line-number" data-line-number="205"></td>
+        <td>The Wrecking Crew (2015)</td>
+        <td>4.5</td>
+        <td>4.2</td>
+        <td>38</td>
+      </tr>
+      <tr id="LC206" class="js-file-line">
+        <td id="L206" class="blob-num js-line-number" data-line-number="206"></td>
+        <td>King Lear (Stratford Festival) (2015)</td>
+        <td>4.5</td>
+        <td>4.2</td>
+        <td>36</td>
+      </tr>
+      <tr id="LC207" class="js-file-line">
+        <td id="L207" class="blob-num js-line-number" data-line-number="207"></td>
+        <td>Tangerine (2015)</td>
+        <td>4</td>
+        <td>3.9</td>
+        <td>36</td>
+      </tr>
+      <tr id="LC208" class="js-file-line">
+        <td id="L208" class="blob-num js-line-number" data-line-number="208"></td>
+        <td>Maps to the Stars (2015)</td>
+        <td>3.5</td>
+        <td>3.1</td>
+        <td>35</td>
+      </tr>
+      <tr id="LC209" class="js-file-line">
+        <td id="L209" class="blob-num js-line-number" data-line-number="209"></td>
+        <td>Do I Sound Gay? (2015)</td>
+        <td>3</td>
+        <td>2.7</td>
+        <td>32</td>
+      </tr>
+      <tr id="LC210" class="js-file-line">
+        <td id="L210" class="blob-num js-line-number" data-line-number="210"></td>
+        <td>Triumph in the Skies (2015)</td>
+        <td>4</td>
+        <td>3.8</td>
+        <td>32</td>
+      </tr>
+      <tr id="LC211" class="js-file-line">
+        <td id="L211" class="blob-num js-line-number" data-line-number="211"></td>
+        <td>In the Name of my Daughter (2015)</td>
+        <td>4</td>
+        <td>3.5</td>
+        <td>31</td>
+      </tr>
+      <tr id="LC212" class="js-file-line">
+        <td id="L212" class="blob-num js-line-number" data-line-number="212"></td>
+        <td>The Metropolitan Opera: La Donna del Lago Encore (2015)</td>
+        <td>4.5</td>
+        <td>4</td>
+        <td>30</td>
+      </tr>
+      <tr id="LC213" class="js-file-line">
+        <td id="L213" class="blob-num js-line-number" data-line-number="213"></td>
+        <td>The Oscar Nominated Short Films 2015: Live Action (2015)</td>
+        <td>3.5</td>
+        <td>3.4</td>
+        <td>30</td>
+      </tr>
+      <tr id="LC214" class="js-file-line">
+        <td id="L214" class="blob-num js-line-number" data-line-number="214"></td>
+        <td>Just the Way You Are (2014) (2015)</td>
+        <td>5</td>
+        <td>4.8</td>
+        <td>29</td>
+      </tr>
+      <tr id="LC215" class="js-file-line">
+        <td id="L215" class="blob-num js-line-number" data-line-number="215"></td>
+        <td>Man From Reno (2015)</td>
+        <td>4</td>
+        <td>4</td>
+        <td>29</td>
+      </tr>
+      <tr id="LC216" class="js-file-line">
+        <td id="L216" class="blob-num js-line-number" data-line-number="216"></td>
+        <td>Slow West (2015)</td>
+        <td>4</td>
+        <td>4</td>
+        <td>29</td>
+      </tr>
+      <tr id="LC217" class="js-file-line">
+        <td id="L217" class="blob-num js-line-number" data-line-number="217"></td>
+        <td>Exhibition OnScreen: Girl with the Pearl Earring (2015)</td>
+        <td>4.5</td>
+        <td>4.2</td>
+        <td>28</td>
+      </tr>
+      <tr id="LC218" class="js-file-line">
+        <td id="L218" class="blob-num js-line-number" data-line-number="218"></td>
+        <td>Daryl Hall &amp; John Oates: Recorded Live From Dublin (2015)</td>
+        <td>4.5</td>
+        <td>4.3</td>
+        <td>28</td>
+      </tr>
+      <tr id="LC219" class="js-file-line">
+        <td id="L219" class="blob-num js-line-number" data-line-number="219"></td>
+        <td>PlantPure Nation (2015)</td>
+        <td>5</td>
+        <td>4.9</td>
+        <td>28</td>
+      </tr>
+      <tr id="LC220" class="js-file-line">
+        <td id="L220" class="blob-num js-line-number" data-line-number="220"></td>
+        <td>Desert Dancer (2015)</td>
+        <td>4</td>
+        <td>4</td>
+        <td>28</td>
+      </tr>
+      <tr id="LC221" class="js-file-line">
+        <td id="L221" class="blob-num js-line-number" data-line-number="221"></td>
+        <td>Boulevard (2015)</td>
+        <td>4.5</td>
+        <td>4.1</td>
+        <td>27</td>
+      </tr>
+      <tr id="LC222" class="js-file-line">
+        <td id="L222" class="blob-num js-line-number" data-line-number="222"></td>
+        <td>Classic Music Series: Aerosmith (2015)</td>
+        <td>5</td>
+        <td>4.6</td>
+        <td>27</td>
+      </tr>
+      <tr id="LC223" class="js-file-line">
+        <td id="L223" class="blob-num js-line-number" data-line-number="223"></td>
+        <td>Samba (2015)</td>
+        <td>4</td>
+        <td>3.8</td>
+        <td>26</td>
+      </tr>
+      <tr id="LC224" class="js-file-line">
+        <td id="L224" class="blob-num js-line-number" data-line-number="224"></td>
+        <td>Antony and Cleopatra (Stratford Festival) (2015)</td>
+        <td>3.5</td>
+        <td>3</td>
+        <td>25</td>
+      </tr>
+      <tr id="LC225" class="js-file-line">
+        <td id="L225" class="blob-num js-line-number" data-line-number="225"></td>
+        <td>The Voices (2015)</td>
+        <td>4</td>
+        <td>3.6</td>
+        <td>25</td>
+      </tr>
+      <tr id="LC226" class="js-file-line">
+        <td id="L226" class="blob-num js-line-number" data-line-number="226"></td>
+        <td>Big Game (2015)</td>
+        <td>4</td>
+        <td>3.5</td>
+        <td>24</td>
+      </tr>
+      <tr id="LC227" class="js-file-line">
+        <td id="L227" class="blob-num js-line-number" data-line-number="227"></td>
+        <td>5 to 7 (2015)</td>
+        <td>3.5</td>
+        <td>3.4</td>
+        <td>24</td>
+      </tr>
+      <tr id="LC228" class="js-file-line">
+        <td id="L228" class="blob-num js-line-number" data-line-number="228"></td>
+        <td>Let&#39;s Get Married (2015)</td>
+        <td>4.5</td>
+        <td>4.4</td>
+        <td>24</td>
+      </tr>
+      <tr id="LC229" class="js-file-line">
+        <td id="L229" class="blob-num js-line-number" data-line-number="229"></td>
+        <td>The Algerian (2015)</td>
+        <td>5</td>
+        <td>4.5</td>
+        <td>23</td>
+      </tr>
+      <tr id="LC230" class="js-file-line">
+        <td id="L230" class="blob-num js-line-number" data-line-number="230"></td>
+        <td>Good Kill (2015)</td>
+        <td>4</td>
+        <td>3.6</td>
+        <td>23</td>
+      </tr>
+      <tr id="LC231" class="js-file-line">
+        <td id="L231" class="blob-num js-line-number" data-line-number="231"></td>
+        <td>The Metropolitan Opera: Cavalleria Rusticana/Paliacci (2015)</td>
+        <td>4.5</td>
+        <td>4.3</td>
+        <td>23</td>
+      </tr>
+      <tr id="LC232" class="js-file-line">
+        <td id="L232" class="blob-num js-line-number" data-line-number="232"></td>
+        <td>Mommy (2015)</td>
+        <td>4</td>
+        <td>3.9</td>
+        <td>23</td>
+      </tr>
+      <tr id="LC233" class="js-file-line">
+        <td id="L233" class="blob-num js-line-number" data-line-number="233"></td>
+        <td>The Oscar Nominated Short Films 2015: Animated (2015)</td>
+        <td>4.5</td>
+        <td>4.1</td>
+        <td>22</td>
+      </tr>
+      <tr id="LC234" class="js-file-line">
+        <td id="L234" class="blob-num js-line-number" data-line-number="234"></td>
+        <td>Jil (2015)</td>
+        <td>3.5</td>
+        <td>3.2</td>
+        <td>22</td>
+      </tr>
+      <tr id="LC235" class="js-file-line">
+        <td id="L235" class="blob-num js-line-number" data-line-number="235"></td>
+        <td>Batkid Begins (2015)</td>
+        <td>4.5</td>
+        <td>4.2</td>
+        <td>22</td>
+      </tr>
+      <tr id="LC236" class="js-file-line">
+        <td id="L236" class="blob-num js-line-number" data-line-number="236"></td>
+        <td>3 Hearts  (2015)</td>
+        <td>3</td>
+        <td>2.8</td>
+        <td>22</td>
+      </tr>
+      <tr id="LC237" class="js-file-line">
+        <td id="L237" class="blob-num js-line-number" data-line-number="237"></td>
+        <td>Cop Car (2015)</td>
+        <td>3.5</td>
+        <td>3.4</td>
+        <td>22</td>
+      </tr>
+      <tr id="LC238" class="js-file-line">
+        <td id="L238" class="blob-num js-line-number" data-line-number="238"></td>
+        <td>Survivor (2015)</td>
+        <td>3.5</td>
+        <td>3.2</td>
+        <td>21</td>
+      </tr>
+      <tr id="LC239" class="js-file-line">
+        <td id="L239" class="blob-num js-line-number" data-line-number="239"></td>
+        <td>Gemma Bovery (2015)</td>
+        <td>3</td>
+        <td>2.8</td>
+        <td>21</td>
+      </tr>
+      <tr id="LC240" class="js-file-line">
+        <td id="L240" class="blob-num js-line-number" data-line-number="240"></td>
+        <td>She&#39;s Funny That Way (2015)</td>
+        <td>4</td>
+        <td>3.8</td>
+        <td>21</td>
+      </tr>
+      <tr id="LC241" class="js-file-line">
+        <td id="L241" class="blob-num js-line-number" data-line-number="241"></td>
+        <td>Zombeavers (2015)</td>
+        <td>4</td>
+        <td>3.8</td>
+        <td>21</td>
+      </tr>
+      <tr id="LC242" class="js-file-line">
+        <td id="L242" class="blob-num js-line-number" data-line-number="242"></td>
+        <td>Maari (2015)</td>
+        <td>4.5</td>
+        <td>4.4</td>
+        <td>21</td>
+      </tr>
+      <tr id="LC243" class="js-file-line">
+        <td id="L243" class="blob-num js-line-number" data-line-number="243"></td>
+        <td>Ballet 422 (2015)</td>
+        <td>3</td>
+        <td>3</td>
+        <td>21</td>
+      </tr>
+      <tr id="LC244" class="js-file-line">
+        <td id="L244" class="blob-num js-line-number" data-line-number="244"></td>
+        <td>No Escape (2015)</td>
+        <td>4</td>
+        <td>4</td>
+        <td>21</td>
+      </tr>
+      <tr id="LC245" class="js-file-line">
+        <td id="L245" class="blob-num js-line-number" data-line-number="245"></td>
+        <td>Mistress America (2015)</td>
+        <td>4</td>
+        <td>3.6</td>
+        <td>20</td>
+      </tr>
+      <tr id="LC246" class="js-file-line">
+        <td id="L246" class="blob-num js-line-number" data-line-number="246"></td>
+        <td>Best of Enemies (2015)</td>
+        <td>3.5</td>
+        <td>3.3</td>
+        <td>20</td>
+      </tr>
+      <tr id="LC247" class="js-file-line">
+        <td id="L247" class="blob-num js-line-number" data-line-number="247"></td>
+        <td>Jimmy&#39;s Hall (2015)</td>
+        <td>3.5</td>
+        <td>3.4</td>
+        <td>20</td>
+      </tr>
+      <tr id="LC248" class="js-file-line">
+        <td id="L248" class="blob-num js-line-number" data-line-number="248"></td>
+        <td>Human Capital (2015)</td>
+        <td>4</td>
+        <td>3.5</td>
+        <td>19</td>
+      </tr>
+      <tr id="LC249" class="js-file-line">
+        <td id="L249" class="blob-num js-line-number" data-line-number="249"></td>
+        <td>White God (2015)</td>
+        <td>4</td>
+        <td>3.6</td>
+        <td>19</td>
+      </tr>
+      <tr id="LC250" class="js-file-line">
+        <td id="L250" class="blob-num js-line-number" data-line-number="250"></td>
+        <td>Boychoir (2015)</td>
+        <td>5</td>
+        <td>4.7</td>
+        <td>19</td>
+      </tr>
+      <tr id="LC251" class="js-file-line">
+        <td id="L251" class="blob-num js-line-number" data-line-number="251"></td>
+        <td>Listen to Me Marlon (2015)</td>
+        <td>3.5</td>
+        <td>3.3</td>
+        <td>19</td>
+      </tr>
+      <tr id="LC252" class="js-file-line">
+        <td id="L252" class="blob-num js-line-number" data-line-number="252"></td>
+        <td>An Honest Liar (2015)</td>
+        <td>4</td>
+        <td>3.8</td>
+        <td>19</td>
+      </tr>
+      <tr id="LC253" class="js-file-line">
+        <td id="L253" class="blob-num js-line-number" data-line-number="253"></td>
+        <td>A LEGO Brickumentary (2015)</td>
+        <td>4.5</td>
+        <td>4.4</td>
+        <td>19</td>
+      </tr>
+      <tr id="LC254" class="js-file-line">
+        <td id="L254" class="blob-num js-line-number" data-line-number="254"></td>
+        <td>The Connection (2015)</td>
+        <td>4</td>
+        <td>3.7</td>
+        <td>18</td>
+      </tr>
+      <tr id="LC255" class="js-file-line">
+        <td id="L255" class="blob-num js-line-number" data-line-number="255"></td>
+        <td>Walt Before Mickey  (2015)</td>
+        <td>5</td>
+        <td>4.7</td>
+        <td>18</td>
+      </tr>
+      <tr id="LC256" class="js-file-line">
+        <td id="L256" class="blob-num js-line-number" data-line-number="256"></td>
+        <td>Results (2015)</td>
+        <td>3</td>
+        <td>3</td>
+        <td>18</td>
+      </tr>
+      <tr id="LC257" class="js-file-line">
+        <td id="L257" class="blob-num js-line-number" data-line-number="257"></td>
+        <td>Heaven Knows What (2015)</td>
+        <td>4</td>
+        <td>3.5</td>
+        <td>17</td>
+      </tr>
+      <tr id="LC258" class="js-file-line">
+        <td id="L258" class="blob-num js-line-number" data-line-number="258"></td>
+        <td>Lambert &amp; Stamp (2015)</td>
+        <td>4</td>
+        <td>3.7</td>
+        <td>17</td>
+      </tr>
+      <tr id="LC259" class="js-file-line">
+        <td id="L259" class="blob-num js-line-number" data-line-number="259"></td>
+        <td>Go Away Mr. Tumor (2015)</td>
+        <td>4.5</td>
+        <td>4.2</td>
+        <td>17</td>
+      </tr>
+      <tr id="LC260" class="js-file-line">
+        <td id="L260" class="blob-num js-line-number" data-line-number="260"></td>
+        <td>What We Did on Our Holiday (2015)</td>
+        <td>4.5</td>
+        <td>4.3</td>
+        <td>17</td>
+      </tr>
+      <tr id="LC261" class="js-file-line">
+        <td id="L261" class="blob-num js-line-number" data-line-number="261"></td>
+        <td>Tangerines (2015)</td>
+        <td>4</td>
+        <td>3.9</td>
+        <td>17</td>
+      </tr>
+      <tr id="LC262" class="js-file-line">
+        <td id="L262" class="blob-num js-line-number" data-line-number="262"></td>
+        <td>Last Knights (2015)</td>
+        <td>5</td>
+        <td>4.7</td>
+        <td>16</td>
+      </tr>
+      <tr id="LC263" class="js-file-line">
+        <td id="L263" class="blob-num js-line-number" data-line-number="263"></td>
+        <td>Manglehorn (2015)</td>
+        <td>2.5</td>
+        <td>2.3</td>
+        <td>16</td>
+      </tr>
+      <tr id="LC264" class="js-file-line">
+        <td id="L264" class="blob-num js-line-number" data-line-number="264"></td>
+        <td>Learning to Drive (2015)</td>
+        <td>4.5</td>
+        <td>4.1</td>
+        <td>15</td>
+      </tr>
+      <tr id="LC265" class="js-file-line">
+        <td id="L265" class="blob-num js-line-number" data-line-number="265"></td>
+        <td>That Thing Called Tadhana (2015)</td>
+        <td>4</td>
+        <td>3.6</td>
+        <td>15</td>
+      </tr>
+      <tr id="LC266" class="js-file-line">
+        <td id="L266" class="blob-num js-line-number" data-line-number="266"></td>
+        <td>Sunshine Superman (2015)</td>
+        <td>4.5</td>
+        <td>4.2</td>
+        <td>15</td>
+      </tr>
+      <tr id="LC267" class="js-file-line">
+        <td id="L267" class="blob-num js-line-number" data-line-number="267"></td>
+        <td>The Farewell Party (2015)</td>
+        <td>3.5</td>
+        <td>3.3</td>
+        <td>15</td>
+      </tr>
+      <tr id="LC268" class="js-file-line">
+        <td id="L268" class="blob-num js-line-number" data-line-number="268"></td>
+        <td>Paulette (2015)</td>
+        <td>4.5</td>
+        <td>4.1</td>
+        <td>14</td>
+      </tr>
+      <tr id="LC269" class="js-file-line">
+        <td id="L269" class="blob-num js-line-number" data-line-number="269"></td>
+        <td>Once I Was a Beehive (2015)</td>
+        <td>5</td>
+        <td>4.6</td>
+        <td>14</td>
+      </tr>
+      <tr id="LC270" class="js-file-line">
+        <td id="L270" class="blob-num js-line-number" data-line-number="270"></td>
+        <td>Vasuvum Saravananum Onna Padichavanga (2015)</td>
+        <td>3.5</td>
+        <td>3.1</td>
+        <td>14</td>
+      </tr>
+      <tr id="LC271" class="js-file-line">
+        <td id="L271" class="blob-num js-line-number" data-line-number="271"></td>
+        <td>Monsters: Dark Continent (2015)</td>
+        <td>3.5</td>
+        <td>3.2</td>
+        <td>14</td>
+      </tr>
+      <tr id="LC272" class="js-file-line">
+        <td id="L272" class="blob-num js-line-number" data-line-number="272"></td>
+        <td>Snow Girl and the Dark Crystal 3D (2015)</td>
+        <td>4</td>
+        <td>3.8</td>
+        <td>14</td>
+      </tr>
+      <tr id="LC273" class="js-file-line">
+        <td id="L273" class="blob-num js-line-number" data-line-number="273"></td>
+        <td>Grandma (2015)</td>
+        <td>4</td>
+        <td>3.9</td>
+        <td>14</td>
+      </tr>
+      <tr id="LC274" class="js-file-line">
+        <td id="L274" class="blob-num js-line-number" data-line-number="274"></td>
+        <td>Can&#39;t Stand Losing You: Surviving The Police (2015)</td>
+        <td>4.5</td>
+        <td>4.4</td>
+        <td>14</td>
+      </tr>
+      <tr id="LC275" class="js-file-line">
+        <td id="L275" class="blob-num js-line-number" data-line-number="275"></td>
+        <td>The Green Inferno (2015)</td>
+        <td>4.5</td>
+        <td>4.4</td>
+        <td>14</td>
+      </tr>
+      <tr id="LC276" class="js-file-line">
+        <td id="L276" class="blob-num js-line-number" data-line-number="276"></td>
+        <td>The Young and Prodigious T.S. Spivet (2015)</td>
+        <td>4.5</td>
+        <td>4.1</td>
+        <td>13</td>
+      </tr>
+      <tr id="LC277" class="js-file-line">
+        <td id="L277" class="blob-num js-line-number" data-line-number="277"></td>
+        <td>Kill Me Three Times (2015)</td>
+        <td>3.5</td>
+        <td>3.2</td>
+        <td>13</td>
+      </tr>
+      <tr id="LC278" class="js-file-line">
+        <td id="L278" class="blob-num js-line-number" data-line-number="278"></td>
+        <td>Runoff (2015)</td>
+        <td>4.5</td>
+        <td>4.2</td>
+        <td>13</td>
+      </tr>
+      <tr id="LC279" class="js-file-line">
+        <td id="L279" class="blob-num js-line-number" data-line-number="279"></td>
+        <td>Matt Shepard Is a Friend of Mine (2015)</td>
+        <td>5</td>
+        <td>4.9</td>
+        <td>13</td>
+      </tr>
+      <tr id="LC280" class="js-file-line">
+        <td id="L280" class="blob-num js-line-number" data-line-number="280"></td>
+        <td>Aloft (2015)</td>
+        <td>3</td>
+        <td>3</td>
+        <td>13</td>
+      </tr>
+      <tr id="LC281" class="js-file-line">
+        <td id="L281" class="blob-num js-line-number" data-line-number="281"></td>
+        <td>Kahlil Gibran&#39;s The Prophet (2015)</td>
+        <td>4</td>
+        <td>4</td>
+        <td>13</td>
+      </tr>
+      <tr id="LC282" class="js-file-line">
+        <td id="L282" class="blob-num js-line-number" data-line-number="282"></td>
+        <td>Lost and Love (Shi Gu) (2015)</td>
+        <td>5</td>
+        <td>4.6</td>
+        <td>12</td>
+      </tr>
+      <tr id="LC283" class="js-file-line">
+        <td id="L283" class="blob-num js-line-number" data-line-number="283"></td>
+        <td>The Tribe (2015)</td>
+        <td>4</td>
+        <td>4</td>
+        <td>12</td>
+      </tr>
+      <tr id="LC284" class="js-file-line">
+        <td id="L284" class="blob-num js-line-number" data-line-number="284"></td>
+        <td>All Is Well (2015)</td>
+        <td>3</td>
+        <td>2.6</td>
+        <td>11</td>
+      </tr>
+      <tr id="LC285" class="js-file-line">
+        <td id="L285" class="blob-num js-line-number" data-line-number="285"></td>
+        <td>Eden (2015)</td>
+        <td>3.5</td>
+        <td>3.1</td>
+        <td>11</td>
+      </tr>
+      <tr id="LC286" class="js-file-line">
+        <td id="L286" class="blob-num js-line-number" data-line-number="286"></td>
+        <td>Spring (2015)</td>
+        <td>4</td>
+        <td>3.6</td>
+        <td>11</td>
+      </tr>
+      <tr id="LC287" class="js-file-line">
+        <td id="L287" class="blob-num js-line-number" data-line-number="287"></td>
+        <td>A Pigeon Sat on a Branch Reflecting on Existence (2015)</td>
+        <td>3.5</td>
+        <td>3.2</td>
+        <td>11</td>
+      </tr>
+      <tr id="LC288" class="js-file-line">
+        <td id="L288" class="blob-num js-line-number" data-line-number="288"></td>
+        <td>Deadpool (2016)</td>
+        <td>5</td>
+        <td>4.7</td>
+        <td>11</td>
+      </tr>
+      <tr id="LC289" class="js-file-line">
+        <td id="L289" class="blob-num js-line-number" data-line-number="289"></td>
+        <td>Queen and Country (2015)</td>
+        <td>4</td>
+        <td>3.8</td>
+        <td>11</td>
+      </tr>
+      <tr id="LC290" class="js-file-line">
+        <td id="L290" class="blob-num js-line-number" data-line-number="290"></td>
+        <td>The Duke of Burgundy (2015)</td>
+        <td>3.5</td>
+        <td>3.4</td>
+        <td>11</td>
+      </tr>
+      <tr id="LC291" class="js-file-line">
+        <td id="L291" class="blob-num js-line-number" data-line-number="291"></td>
+        <td>Girlhood (2015)</td>
+        <td>4</td>
+        <td>3.5</td>
+        <td>10</td>
+      </tr>
+      <tr id="LC292" class="js-file-line">
+        <td id="L292" class="blob-num js-line-number" data-line-number="292"></td>
+        <td>Madame Bovary (2015)</td>
+        <td>4</td>
+        <td>3.6</td>
+        <td>10</td>
+      </tr>
+      <tr id="LC293" class="js-file-line">
+        <td id="L293" class="blob-num js-line-number" data-line-number="293"></td>
+        <td>Cymbeline (2015)</td>
+        <td>4</td>
+        <td>3.7</td>
+        <td>10</td>
+      </tr>
+      <tr id="LC294" class="js-file-line">
+        <td id="L294" class="blob-num js-line-number" data-line-number="294"></td>
+        <td> Like Sunday, Like Rain (2015)</td>
+        <td>4</td>
+        <td>3.7</td>
+        <td>10</td>
+      </tr>
+      <tr id="LC295" class="js-file-line">
+        <td id="L295" class="blob-num js-line-number" data-line-number="295"></td>
+        <td>THE DEATH OF SUPERMAN LIVES: WHAT HAPPENED? (2015)</td>
+        <td>5</td>
+        <td>4.7</td>
+        <td>10</td>
+      </tr>
+      <tr id="LC296" class="js-file-line">
+        <td id="L296" class="blob-num js-line-number" data-line-number="296"></td>
+        <td>The Riot Club (2015)</td>
+        <td>3.5</td>
+        <td>3.3</td>
+        <td>10</td>
+      </tr>
+      <tr id="LC297" class="js-file-line">
+        <td id="L297" class="blob-num js-line-number" data-line-number="297"></td>
+        <td>The Salvation (2015)</td>
+        <td>4</td>
+        <td>3.9</td>
+        <td>10</td>
+      </tr>
+      <tr id="LC298" class="js-file-line">
+        <td id="L298" class="blob-num js-line-number" data-line-number="298"></td>
+        <td>National Theatre Live: Man and Superman (2015)</td>
+        <td>5</td>
+        <td>5</td>
+        <td>10</td>
+      </tr>
+      <tr id="LC299" class="js-file-line">
+        <td id="L299" class="blob-num js-line-number" data-line-number="299"></td>
+        <td>How to Fight in Six Inch Heels (2015)</td>
+        <td>4.5</td>
+        <td>4.1</td>
+        <td>9</td>
+      </tr>
+      <tr id="LC300" class="js-file-line">
+        <td id="L300" class="blob-num js-line-number" data-line-number="300"></td>
+        <td>Superfast! (2015)</td>
+        <td>5</td>
+        <td>4.6</td>
+        <td>9</td>
+      </tr>
+      <tr id="LC301" class="js-file-line">
+        <td id="L301" class="blob-num js-line-number" data-line-number="301"></td>
+        <td>Tinker Bell and the Legend of the NeverBeast (2015)</td>
+        <td>5</td>
+        <td>4.6</td>
+        <td>9</td>
+      </tr>
+      <tr id="LC302" class="js-file-line">
+        <td id="L302" class="blob-num js-line-number" data-line-number="302"></td>
+        <td>Gabriel (2015)</td>
+        <td>4</td>
+        <td>3.6</td>
+        <td>9</td>
+      </tr>
+      <tr id="LC303" class="js-file-line">
+        <td id="L303" class="blob-num js-line-number" data-line-number="303"></td>
+        <td>The Search for General Tso (2015)</td>
+        <td>3.5</td>
+        <td>3.3</td>
+        <td>9</td>
+      </tr>
+      <tr id="LC304" class="js-file-line">
+        <td id="L304" class="blob-num js-line-number" data-line-number="304"></td>
+        <td>Julie Taymor&#39;s Midsummer Night&#39;s Dream (2015)</td>
+        <td>4.5</td>
+        <td>4.4</td>
+        <td>9</td>
+      </tr>
+      <tr id="LC305" class="js-file-line">
+        <td id="L305" class="blob-num js-line-number" data-line-number="305"></td>
+        <td>Love Live! The School Idol Movie (2015)</td>
+        <td>5</td>
+        <td>4.9</td>
+        <td>9</td>
+      </tr>
+      <tr id="LC306" class="js-file-line">
+        <td id="L306" class="blob-num js-line-number" data-line-number="306"></td>
+        <td>Maze Runner: The Scorch Trials (2015)</td>
+        <td>5</td>
+        <td>5</td>
+        <td>9</td>
+      </tr>
+      <tr id="LC307" class="js-file-line">
+        <td id="L307" class="blob-num js-line-number" data-line-number="307"></td>
+        <td>Dark Awakening (2015)</td>
+        <td>4</td>
+        <td>3.5</td>
+        <td>8</td>
+      </tr>
+      <tr id="LC308" class="js-file-line">
+        <td id="L308" class="blob-num js-line-number" data-line-number="308"></td>
+        <td>12 Golden Ducks (2015)</td>
+        <td>5</td>
+        <td>4.5</td>
+        <td>8</td>
+      </tr>
+      <tr id="LC309" class="js-file-line">
+        <td id="L309" class="blob-num js-line-number" data-line-number="309"></td>
+        <td>Kurt Cobain: Montage of Heck (2015)</td>
+        <td>5</td>
+        <td>4.6</td>
+        <td>8</td>
+      </tr>
+      <tr id="LC310" class="js-file-line">
+        <td id="L310" class="blob-num js-line-number" data-line-number="310"></td>
+        <td>Only You (2015)</td>
+        <td>5</td>
+        <td>4.6</td>
+        <td>8</td>
+      </tr>
+      <tr id="LC311" class="js-file-line">
+        <td id="L311" class="blob-num js-line-number" data-line-number="311"></td>
+        <td>The Outrageous Sophie Tucker (2015)</td>
+        <td>4</td>
+        <td>3.6</td>
+        <td>8</td>
+      </tr>
+      <tr id="LC312" class="js-file-line">
+        <td id="L312" class="blob-num js-line-number" data-line-number="312"></td>
+        <td>Eastern Boys (2015)</td>
+        <td>3.5</td>
+        <td>3.3</td>
+        <td>8</td>
+      </tr>
+      <tr id="LC313" class="js-file-line">
+        <td id="L313" class="blob-num js-line-number" data-line-number="313"></td>
+        <td>Amira &amp; Sam (2015)</td>
+        <td>5</td>
+        <td>4.8</td>
+        <td>8</td>
+      </tr>
+      <tr id="LC314" class="js-file-line">
+        <td id="L314" class="blob-num js-line-number" data-line-number="314"></td>
+        <td>Barely Lethal (2015)</td>
+        <td>5</td>
+        <td>4.8</td>
+        <td>8</td>
+      </tr>
+      <tr id="LC315" class="js-file-line">
+        <td id="L315" class="blob-num js-line-number" data-line-number="315"></td>
+        <td>Into The Grizzly Maze (2015)</td>
+        <td>3.5</td>
+        <td>3.4</td>
+        <td>8</td>
+      </tr>
+      <tr id="LC316" class="js-file-line">
+        <td id="L316" class="blob-num js-line-number" data-line-number="316"></td>
+        <td>The Look of Silence (2015)</td>
+        <td>3.5</td>
+        <td>3.4</td>
+        <td>8</td>
+      </tr>
+      <tr id="LC317" class="js-file-line">
+        <td id="L317" class="blob-num js-line-number" data-line-number="317"></td>
+        <td>I Am Big Bird: The Caroll Spinney Story (2015)</td>
+        <td>4</td>
+        <td>3.9</td>
+        <td>8</td>
+      </tr>
+      <tr id="LC318" class="js-file-line">
+        <td id="L318" class="blob-num js-line-number" data-line-number="318"></td>
+        <td>Humpback Whales (2015)</td>
+        <td>4.5</td>
+        <td>4.4</td>
+        <td>8</td>
+      </tr>
+      <tr id="LC319" class="js-file-line">
+        <td id="L319" class="blob-num js-line-number" data-line-number="319"></td>
+        <td>Cheatin&#39; (2015)</td>
+        <td>5</td>
+        <td>5</td>
+        <td>8</td>
+      </tr>
+      <tr id="LC320" class="js-file-line">
+        <td id="L320" class="blob-num js-line-number" data-line-number="320"></td>
+        <td>After Words (2015)</td>
+        <td>4</td>
+        <td>3.6</td>
+        <td>7</td>
+      </tr>
+      <tr id="LC321" class="js-file-line">
+        <td id="L321" class="blob-num js-line-number" data-line-number="321"></td>
+        <td>Beloved Sisters (2014)</td>
+        <td>3.5</td>
+        <td>3.3</td>
+        <td>7</td>
+      </tr>
+      <tr id="LC322" class="js-file-line">
+        <td id="L322" class="blob-num js-line-number" data-line-number="322"></td>
+        <td>Cut Bank (2015)</td>
+        <td>3.5</td>
+        <td>3.3</td>
+        <td>7</td>
+      </tr>
+      <tr id="LC323" class="js-file-line">
+        <td id="L323" class="blob-num js-line-number" data-line-number="323"></td>
+        <td>Six Dance Lessons in Six Weeks (2014)</td>
+        <td>3</td>
+        <td>3</td>
+        <td>7</td>
+      </tr>
+      <tr id="LC324" class="js-file-line">
+        <td id="L324" class="blob-num js-line-number" data-line-number="324"></td>
+        <td>The Pardon (2015)</td>
+        <td>4</td>
+        <td>4</td>
+        <td>7</td>
+      </tr>
+      <tr id="LC325" class="js-file-line">
+        <td id="L325" class="blob-num js-line-number" data-line-number="325"></td>
+        <td>League of Legends LCS Summer Finals (2015)</td>
+        <td>5</td>
+        <td>5</td>
+        <td>7</td>
+      </tr>
+      <tr id="LC326" class="js-file-line">
+        <td id="L326" class="blob-num js-line-number" data-line-number="326"></td>
+        <td>Vaalu (2015)</td>
+        <td>2</td>
+        <td>1.5</td>
+        <td>6</td>
+      </tr>
+      <tr id="LC327" class="js-file-line">
+        <td id="L327" class="blob-num js-line-number" data-line-number="327"></td>
+        <td>The Little Death (2015)</td>
+        <td>5</td>
+        <td>4.5</td>
+        <td>6</td>
+      </tr>
+      <tr id="LC328" class="js-file-line">
+        <td id="L328" class="blob-num js-line-number" data-line-number="328"></td>
+        <td>Live From New York! (2015)</td>
+        <td>4.5</td>
+        <td>4.2</td>
+        <td>6</td>
+      </tr>
+      <tr id="LC329" class="js-file-line">
+        <td id="L329" class="blob-num js-line-number" data-line-number="329"></td>
+        <td>Backcountry (2015)</td>
+        <td>4</td>
+        <td>3.8</td>
+        <td>6</td>
+      </tr>
+      <tr id="LC330" class="js-file-line">
+        <td id="L330" class="blob-num js-line-number" data-line-number="330"></td>
+        <td>Some Kind of Beautiful (2015)</td>
+        <td>4</td>
+        <td>4</td>
+        <td>6</td>
+      </tr>
+      <tr id="LC331" class="js-file-line">
+        <td id="L331" class="blob-num js-line-number" data-line-number="331"></td>
+        <td>Hotel Transylvania 2 (2015)</td>
+        <td>5</td>
+        <td>5</td>
+        <td>6</td>
+      </tr>
+      <tr id="LC332" class="js-file-line">
+        <td id="L332" class="blob-num js-line-number" data-line-number="332"></td>
+        <td>Soaked In Bleach (2015)</td>
+        <td>5</td>
+        <td>5</td>
+        <td>6</td>
+      </tr>
+      <tr id="LC333" class="js-file-line">
+        <td id="L333" class="blob-num js-line-number" data-line-number="333"></td>
+        <td>I Believe in Unicorns (2015)</td>
+        <td>5</td>
+        <td>4.6</td>
+        <td>5</td>
+      </tr>
+      <tr id="LC334" class="js-file-line">
+        <td id="L334" class="blob-num js-line-number" data-line-number="334"></td>
+        <td>Living in the Age of Airplanes (2015)</td>
+        <td>4</td>
+        <td>3.6</td>
+        <td>5</td>
+      </tr>
+      <tr id="LC335" class="js-file-line">
+        <td id="L335" class="blob-num js-line-number" data-line-number="335"></td>
+        <td>We Are Your Friends (2015)</td>
+        <td>4</td>
+        <td>3.6</td>
+        <td>5</td>
+      </tr>
+      <tr id="LC336" class="js-file-line">
+        <td id="L336" class="blob-num js-line-number" data-line-number="336"></td>
+        <td>The Falling (2015)</td>
+        <td>3.5</td>
+        <td>3.2</td>
+        <td>5</td>
+      </tr>
+      <tr id="LC337" class="js-file-line">
+        <td id="L337" class="blob-num js-line-number" data-line-number="337"></td>
+        <td>The Peanuts Movie (2015)</td>
+        <td>4.5</td>
+        <td>4.2</td>
+        <td>5</td>
+      </tr>
+      <tr id="LC338" class="js-file-line">
+        <td id="L338" class="blob-num js-line-number" data-line-number="338"></td>
+        <td>Ennum Eppozhum (2015)</td>
+        <td>3</td>
+        <td>2.8</td>
+        <td>5</td>
+      </tr>
+      <tr id="LC339" class="js-file-line">
+        <td id="L339" class="blob-num js-line-number" data-line-number="339"></td>
+        <td>The Ark Of Mr. Chow (2015)</td>
+        <td>3</td>
+        <td>2.8</td>
+        <td>5</td>
+      </tr>
+      <tr id="LC340" class="js-file-line">
+        <td id="L340" class="blob-num js-line-number" data-line-number="340"></td>
+        <td>Humpback Whales 3D (2015)</td>
+        <td>4</td>
+        <td>3.8</td>
+        <td>5</td>
+      </tr>
+      <tr id="LC341" class="js-file-line">
+        <td id="L341" class="blob-num js-line-number" data-line-number="341"></td>
+        <td>Police Story: Lockdown (2015)</td>
+        <td>5</td>
+        <td>4.8</td>
+        <td>5</td>
+      </tr>
+      <tr id="LC342" class="js-file-line">
+        <td id="L342" class="blob-num js-line-number" data-line-number="342"></td>
+        <td>Fresh Dressed (2015)</td>
+        <td>4.5</td>
+        <td>4.4</td>
+        <td>5</td>
+      </tr>
+      <tr id="LC343" class="js-file-line">
+        <td id="L343" class="blob-num js-line-number" data-line-number="343"></td>
+        <td>Two Step (2015)</td>
+        <td>4.5</td>
+        <td>4.4</td>
+        <td>5</td>
+      </tr>
+      <tr id="LC344" class="js-file-line">
+        <td id="L344" class="blob-num js-line-number" data-line-number="344"></td>
+        <td>An Open Secret (2015)</td>
+        <td>3</td>
+        <td>3</td>
+        <td>5</td>
+      </tr>
+      <tr id="LC345" class="js-file-line">
+        <td id="L345" class="blob-num js-line-number" data-line-number="345"></td>
+        <td>3 1/2 Minutes, Ten Bullets (2015)</td>
+        <td>4</td>
+        <td>4</td>
+        <td>5</td>
+      </tr>
+      <tr id="LC346" class="js-file-line">
+        <td id="L346" class="blob-num js-line-number" data-line-number="346"></td>
+        <td>Bonobos: Back To The Wild (2015)</td>
+        <td>4</td>
+        <td>4</td>
+        <td>5</td>
+      </tr>
+      <tr id="LC347" class="js-file-line">
+        <td id="L347" class="blob-num js-line-number" data-line-number="347"></td>
+        <td>Magician: The Astonishing Life and Work of Orson Welles (2014)</td>
+        <td>4</td>
+        <td>4</td>
+        <td>5</td>
+      </tr>
+      <tr id="LC348" class="js-file-line">
+        <td id="L348" class="blob-num js-line-number" data-line-number="348"></td>
+        <td>Detective K: Secret of the Lost Island (2015)</td>
+        <td>3</td>
+        <td>2.5</td>
+        <td>4</td>
+      </tr>
+      <tr id="LC349" class="js-file-line">
+        <td id="L349" class="blob-num js-line-number" data-line-number="349"></td>
+        <td>Fort Tilden (2015)</td>
+        <td>3</td>
+        <td>2.5</td>
+        <td>4</td>
+      </tr>
+      <tr id="LC350" class="js-file-line">
+        <td id="L350" class="blob-num js-line-number" data-line-number="350"></td>
+        <td>ESL One Cologne Counter-Strike: GO Finals Live (2015)</td>
+        <td>4</td>
+        <td>3.5</td>
+        <td>4</td>
+      </tr>
+      <tr id="LC351" class="js-file-line">
+        <td id="L351" class="blob-num js-line-number" data-line-number="351"></td>
+        <td>People, Places, Things (2015)</td>
+        <td>5</td>
+        <td>4.5</td>
+        <td>4</td>
+      </tr>
+      <tr id="LC352" class="js-file-line">
+        <td id="L352" class="blob-num js-line-number" data-line-number="352"></td>
+        <td>Ten Thousand Saints (2015)</td>
+        <td>5</td>
+        <td>4.5</td>
+        <td>4</td>
+      </tr>
+      <tr id="LC353" class="js-file-line">
+        <td id="L353" class="blob-num js-line-number" data-line-number="353"></td>
+        <td>The Yes Men Are Revolting (2015)</td>
+        <td>5</td>
+        <td>4.5</td>
+        <td>4</td>
+      </tr>
+      <tr id="LC354" class="js-file-line">
+        <td id="L354" class="blob-num js-line-number" data-line-number="354"></td>
+        <td>24 Days (2015)</td>
+        <td>3.5</td>
+        <td>3.3</td>
+        <td>4</td>
+      </tr>
+      <tr id="LC355" class="js-file-line">
+        <td id="L355" class="blob-num js-line-number" data-line-number="355"></td>
+        <td>Black Mass (2015)</td>
+        <td>3.5</td>
+        <td>3.3</td>
+        <td>4</td>
+      </tr>
+      <tr id="LC356" class="js-file-line">
+        <td id="L356" class="blob-num js-line-number" data-line-number="356"></td>
+        <td>Komban (2015)</td>
+        <td>3.5</td>
+        <td>3.3</td>
+        <td>4</td>
+      </tr>
+      <tr id="LC357" class="js-file-line">
+        <td id="L357" class="blob-num js-line-number" data-line-number="357"></td>
+        <td>Cupcakes (2015)</td>
+        <td>4</td>
+        <td>3.8</td>
+        <td>4</td>
+      </tr>
+      <tr id="LC358" class="js-file-line">
+        <td id="L358" class="blob-num js-line-number" data-line-number="358"></td>
+        <td>Misery Loves Comedy (2015)</td>
+        <td>4</td>
+        <td>3.8</td>
+        <td>4</td>
+      </tr>
+      <tr id="LC359" class="js-file-line">
+        <td id="L359" class="blob-num js-line-number" data-line-number="359"></td>
+        <td>Rakshasudu (2015)</td>
+        <td>4</td>
+        <td>3.8</td>
+        <td>4</td>
+      </tr>
+      <tr id="LC360" class="js-file-line">
+        <td id="L360" class="blob-num js-line-number" data-line-number="360"></td>
+        <td>Wonderful Nightmare (2015)</td>
+        <td>4</td>
+        <td>3.8</td>
+        <td>4</td>
+      </tr>
+      <tr id="LC361" class="js-file-line">
+        <td id="L361" class="blob-num js-line-number" data-line-number="361"></td>
+        <td>Indru Netru Naalai (2015)</td>
+        <td>4.5</td>
+        <td>4.3</td>
+        <td>4</td>
+      </tr>
+      <tr id="LC362" class="js-file-line">
+        <td id="L362" class="blob-num js-line-number" data-line-number="362"></td>
+        <td>I Am Chris Farley (2015)</td>
+        <td>5</td>
+        <td>4.8</td>
+        <td>4</td>
+      </tr>
+      <tr id="LC363" class="js-file-line">
+        <td id="L363" class="blob-num js-line-number" data-line-number="363"></td>
+        <td>The Good Dinosaur (2015)</td>
+        <td>5</td>
+        <td>4.8</td>
+        <td>4</td>
+      </tr>
+      <tr id="LC364" class="js-file-line">
+        <td id="L364" class="blob-num js-line-number" data-line-number="364"></td>
+        <td>The Mafia Only Kills in Summer (2015)</td>
+        <td>3</td>
+        <td>3</td>
+        <td>4</td>
+      </tr>
+      <tr id="LC365" class="js-file-line">
+        <td id="L365" class="blob-num js-line-number" data-line-number="365"></td>
+        <td>Legends from the Sky (2015)</td>
+        <td>4</td>
+        <td>4</td>
+        <td>4</td>
+      </tr>
+      <tr id="LC366" class="js-file-line">
+        <td id="L366" class="blob-num js-line-number" data-line-number="366"></td>
+        <td>SBK The-Movie (2015)</td>
+        <td>4</td>
+        <td>4</td>
+        <td>4</td>
+      </tr>
+      <tr id="LC367" class="js-file-line">
+        <td id="L367" class="blob-num js-line-number" data-line-number="367"></td>
+        <td>National Theatre Live: The Hard Problem (2015)</td>
+        <td>5</td>
+        <td>5</td>
+        <td>4</td>
+      </tr>
+      <tr id="LC368" class="js-file-line">
+        <td id="L368" class="blob-num js-line-number" data-line-number="368"></td>
+        <td>The Boy (2015)</td>
+        <td>5</td>
+        <td>5</td>
+        <td>4</td>
+      </tr>
+      <tr id="LC369" class="js-file-line">
+        <td id="L369" class="blob-num js-line-number" data-line-number="369"></td>
+        <td>The Perfect Guy (2015)</td>
+        <td>5</td>
+        <td>5</td>
+        <td>4</td>
+      </tr>
+      <tr id="LC370" class="js-file-line">
+        <td id="L370" class="blob-num js-line-number" data-line-number="370"></td>
+        <td>Forbidden Films (2015)</td>
+        <td>3</td>
+        <td>2.7</td>
+        <td>3</td>
+      </tr>
+      <tr id="LC371" class="js-file-line">
+        <td id="L371" class="blob-num js-line-number" data-line-number="371"></td>
+        <td>A Poem Is a Naked Person (2015)</td>
+        <td>4</td>
+        <td>3.7</td>
+        <td>3</td>
+      </tr>
+      <tr id="LC372" class="js-file-line">
+        <td id="L372" class="blob-num js-line-number" data-line-number="372"></td>
+        <td>Buzzard (2015)</td>
+        <td>4</td>
+        <td>3.7</td>
+        <td>3</td>
+      </tr>
+      <tr id="LC373" class="js-file-line">
+        <td id="L373" class="blob-num js-line-number" data-line-number="373"></td>
+        <td>Court (2015)</td>
+        <td>4</td>
+        <td>3.7</td>
+        <td>3</td>
+      </tr>
+      <tr id="LC374" class="js-file-line">
+        <td id="L374" class="blob-num js-line-number" data-line-number="374"></td>
+        <td>A Walk in the Woods (2015)</td>
+        <td>4.5</td>
+        <td>4.3</td>
+        <td>3</td>
+      </tr>
+      <tr id="LC375" class="js-file-line">
+        <td id="L375" class="blob-num js-line-number" data-line-number="375"></td>
+        <td>Drafthouse Films: ROAR (2015)</td>
+        <td>4.5</td>
+        <td>4.3</td>
+        <td>3</td>
+      </tr>
+      <tr id="LC376" class="js-file-line">
+        <td id="L376" class="blob-num js-line-number" data-line-number="376"></td>
+        <td>The Girl is in Trouble (2015)</td>
+        <td>4.5</td>
+        <td>4.3</td>
+        <td>3</td>
+      </tr>
+      <tr id="LC377" class="js-file-line">
+        <td id="L377" class="blob-num js-line-number" data-line-number="377"></td>
+        <td>Winning: The Racing Life Of Paul Newman (2015)</td>
+        <td>4.5</td>
+        <td>4.3</td>
+        <td>3</td>
+      </tr>
+      <tr id="LC378" class="js-file-line">
+        <td id="L378" class="blob-num js-line-number" data-line-number="378"></td>
+        <td>Don&#39;t Think I&#39;ve Forgotten: Cambodia&#39;s Lost Rock and Roll (2015)</td>
+        <td>4</td>
+        <td>4</td>
+        <td>3</td>
+      </tr>
+      <tr id="LC379" class="js-file-line">
+        <td id="L379" class="blob-num js-line-number" data-line-number="379"></td>
+        <td>Dukale&#39;s Dream (2015)</td>
+        <td>4</td>
+        <td>4</td>
+        <td>3</td>
+      </tr>
+      <tr id="LC380" class="js-file-line">
+        <td id="L380" class="blob-num js-line-number" data-line-number="380"></td>
+        <td>Marie&#39;s Story (2015)</td>
+        <td>4</td>
+        <td>4</td>
+        <td>3</td>
+      </tr>
+      <tr id="LC381" class="js-file-line">
+        <td id="L381" class="blob-num js-line-number" data-line-number="381"></td>
+        <td>Royal Ballet: The Winterâ€™s Tale (2015)</td>
+        <td>4</td>
+        <td>4</td>
+        <td>3</td>
+      </tr>
+      <tr id="LC382" class="js-file-line">
+        <td id="L382" class="blob-num js-line-number" data-line-number="382"></td>
+        <td>Fall to Rise (2015)</td>
+        <td>5</td>
+        <td>5</td>
+        <td>3</td>
+      </tr>
+      <tr id="LC383" class="js-file-line">
+        <td id="L383" class="blob-num js-line-number" data-line-number="383"></td>
+        <td>Turbo Kid (2015)</td>
+        <td>5</td>
+        <td>4</td>
+        <td>2</td>
+      </tr>
+      <tr id="LC384" class="js-file-line">
+        <td id="L384" class="blob-num js-line-number" data-line-number="384"></td>
+        <td>Hunting Elephants (2015)</td>
+        <td>3</td>
+        <td>2.5</td>
+        <td>2</td>
+      </tr>
+      <tr id="LC385" class="js-file-line">
+        <td id="L385" class="blob-num js-line-number" data-line-number="385"></td>
+        <td>Felt (2015)</td>
+        <td>4</td>
+        <td>3.5</td>
+        <td>2</td>
+      </tr>
+      <tr id="LC386" class="js-file-line">
+        <td id="L386" class="blob-num js-line-number" data-line-number="386"></td>
+        <td>October Gale (2015)</td>
+        <td>2</td>
+        <td>2</td>
+        <td>2</td>
+      </tr>
+      <tr id="LC387" class="js-file-line">
+        <td id="L387" class="blob-num js-line-number" data-line-number="387"></td>
+        <td>1001 Grams (2015)</td>
+        <td>3</td>
+        <td>3</td>
+        <td>2</td>
+      </tr>
+      <tr id="LC388" class="js-file-line">
+        <td id="L388" class="blob-num js-line-number" data-line-number="388"></td>
+        <td>Charlie&#39;s Country (2015)</td>
+        <td>3</td>
+        <td>3</td>
+        <td>2</td>
+      </tr>
+      <tr id="LC389" class="js-file-line">
+        <td id="L389" class="blob-num js-line-number" data-line-number="389"></td>
+        <td>Jauja (2015)</td>
+        <td>3</td>
+        <td>3</td>
+        <td>2</td>
+      </tr>
+      <tr id="LC390" class="js-file-line">
+        <td id="L390" class="blob-num js-line-number" data-line-number="390"></td>
+        <td>Love at First Fight (2015)</td>
+        <td>3</td>
+        <td>3</td>
+        <td>2</td>
+      </tr>
+      <tr id="LC391" class="js-file-line">
+        <td id="L391" class="blob-num js-line-number" data-line-number="391"></td>
+        <td>The Lovers (2015)</td>
+        <td>3</td>
+        <td>3</td>
+        <td>2</td>
+      </tr>
+      <tr id="LC392" class="js-file-line">
+        <td id="L392" class="blob-num js-line-number" data-line-number="392"></td>
+        <td>Welcome to New York (2015)</td>
+        <td>3</td>
+        <td>3</td>
+        <td>2</td>
+      </tr>
+      <tr id="LC393" class="js-file-line">
+        <td id="L393" class="blob-num js-line-number" data-line-number="393"></td>
+        <td>Rebels of the Neon God (2015)</td>
+        <td>4</td>
+        <td>4</td>
+        <td>2</td>
+      </tr>
+      <tr id="LC394" class="js-file-line">
+        <td id="L394" class="blob-num js-line-number" data-line-number="394"></td>
+        <td>The Visit (2015)</td>
+        <td>4</td>
+        <td>4</td>
+        <td>2</td>
+      </tr>
+      <tr id="LC395" class="js-file-line">
+        <td id="L395" class="blob-num js-line-number" data-line-number="395"></td>
+        <td>We Come as Friends (1)</td>
+        <td>4</td>
+        <td>4</td>
+        <td>2</td>
+      </tr>
+      <tr id="LC396" class="js-file-line">
+        <td id="L396" class="blob-num js-line-number" data-line-number="396"></td>
+        <td>Appropriate Behavior (2015)</td>
+        <td>5</td>
+        <td>5</td>
+        <td>2</td>
+      </tr>
+      <tr id="LC397" class="js-file-line">
+        <td id="L397" class="blob-num js-line-number" data-line-number="397"></td>
+        <td>Dogs on the Inside (2015)</td>
+        <td>5</td>
+        <td>5</td>
+        <td>2</td>
+      </tr>
+      <tr id="LC398" class="js-file-line">
+        <td id="L398" class="blob-num js-line-number" data-line-number="398"></td>
+        <td>She&#39;s Lost Control (2015)</td>
+        <td>5</td>
+        <td>5</td>
+        <td>2</td>
+      </tr>
+      <tr id="LC399" class="js-file-line">
+        <td id="L399" class="blob-num js-line-number" data-line-number="399"></td>
+        <td>The Forecaster (2015)</td>
+        <td>5</td>
+        <td>5</td>
+        <td>2</td>
+      </tr>
+      <tr id="LC400" class="js-file-line">
+        <td id="L400" class="blob-num js-line-number" data-line-number="400"></td>
+        <td>The Seven Five (2015)</td>
+        <td>5</td>
+        <td>5</td>
+        <td>2</td>
+      </tr>
+      <tr id="LC401" class="js-file-line">
+        <td id="L401" class="blob-num js-line-number" data-line-number="401"></td>
+        <td>The Transporter Refueled (2015)</td>
+        <td>5</td>
+        <td>5</td>
+        <td>2</td>
+      </tr>
+      <tr id="LC402" class="js-file-line">
+        <td id="L402" class="blob-num js-line-number" data-line-number="402"></td>
+        <td>Tiger (2015)</td>
+        <td>5</td>
+        <td>5</td>
+        <td>2</td>
+      </tr>
+      <tr id="LC403" class="js-file-line">
+        <td id="L403" class="blob-num js-line-number" data-line-number="403"></td>
+        <td>Maya the Bee Movie (2015)</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+      </tr>
+      <tr id="LC404" class="js-file-line">
+        <td id="L404" class="blob-num js-line-number" data-line-number="404"></td>
+        <td>Nannbenda (2015)</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+      </tr>
+      <tr id="LC405" class="js-file-line">
+        <td id="L405" class="blob-num js-line-number" data-line-number="405"></td>
+        <td>Ned Rifle (2015)</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+      </tr>
+      <tr id="LC406" class="js-file-line">
+        <td id="L406" class="blob-num js-line-number" data-line-number="406"></td>
+        <td>Closer to the Moon (2015)</td>
+        <td>2</td>
+        <td>2</td>
+        <td>1</td>
+      </tr>
+      <tr id="LC407" class="js-file-line">
+        <td id="L407" class="blob-num js-line-number" data-line-number="407"></td>
+        <td>Treading Water (2015)</td>
+        <td>2</td>
+        <td>2</td>
+        <td>1</td>
+      </tr>
+      <tr id="LC408" class="js-file-line">
+        <td id="L408" class="blob-num js-line-number" data-line-number="408"></td>
+        <td>Amour Fou (2015)</td>
+        <td>3</td>
+        <td>3</td>
+        <td>1</td>
+      </tr>
+      <tr id="LC409" class="js-file-line">
+        <td id="L409" class="blob-num js-line-number" data-line-number="409"></td>
+        <td>Dark Star: H.R. Giger&#39;s World (2015)</td>
+        <td>3</td>
+        <td>3</td>
+        <td>1</td>
+      </tr>
+      <tr id="LC410" class="js-file-line">
+        <td id="L410" class="blob-num js-line-number" data-line-number="410"></td>
+        <td>Empire of Lust (2015)</td>
+        <td>3</td>
+        <td>3</td>
+        <td>1</td>
+      </tr>
+      <tr id="LC411" class="js-file-line">
+        <td id="L411" class="blob-num js-line-number" data-line-number="411"></td>
+        <td>Hungry Hearts (2015)</td>
+        <td>3</td>
+        <td>3</td>
+        <td>1</td>
+      </tr>
+      <tr id="LC412" class="js-file-line">
+        <td id="L412" class="blob-num js-line-number" data-line-number="412"></td>
+        <td>Nannbenda (2015)</td>
+        <td>3</td>
+        <td>3</td>
+        <td>1</td>
+      </tr>
+      <tr id="LC413" class="js-file-line">
+        <td id="L413" class="blob-num js-line-number" data-line-number="413"></td>
+        <td>One Cut, One Life (2015)</td>
+        <td>3</td>
+        <td>3</td>
+        <td>1</td>
+      </tr>
+      <tr id="LC414" class="js-file-line">
+        <td id="L414" class="blob-num js-line-number" data-line-number="414"></td>
+        <td>The Face of an Angel (2015)</td>
+        <td>3</td>
+        <td>3</td>
+        <td>1</td>
+      </tr>
+      <tr id="LC415" class="js-file-line">
+        <td id="L415" class="blob-num js-line-number" data-line-number="415"></td>
+        <td>The Living (2015)</td>
+        <td>3</td>
+        <td>3</td>
+        <td>1</td>
+      </tr>
+      <tr id="LC416" class="js-file-line">
+        <td id="L416" class="blob-num js-line-number" data-line-number="416"></td>
+        <td>Wild Canaries (2015)</td>
+        <td>3</td>
+        <td>3</td>
+        <td>1</td>
+      </tr>
+      <tr id="LC417" class="js-file-line">
+        <td id="L417" class="blob-num js-line-number" data-line-number="417"></td>
+        <td>Buggs Bunny (2015)</td>
+        <td>4</td>
+        <td>4</td>
+        <td>1</td>
+      </tr>
+      <tr id="LC418" class="js-file-line">
+        <td id="L418" class="blob-num js-line-number" data-line-number="418"></td>
+        <td>Digging for Fire (2015)</td>
+        <td>4</td>
+        <td>4</td>
+        <td>1</td>
+      </tr>
+      <tr id="LC419" class="js-file-line">
+        <td id="L419" class="blob-num js-line-number" data-line-number="419"></td>
+        <td>Every Last Child (2015)</td>
+        <td>4</td>
+        <td>4</td>
+        <td>1</td>
+      </tr>
+      <tr id="LC420" class="js-file-line">
+        <td id="L420" class="blob-num js-line-number" data-line-number="420"></td>
+        <td>Journey to Space (2015)</td>
+        <td>4</td>
+        <td>4</td>
+        <td>1</td>
+      </tr>
+      <tr id="LC421" class="js-file-line">
+        <td id="L421" class="blob-num js-line-number" data-line-number="421"></td>
+        <td>Kidnapping Mr. Heineken (2015)</td>
+        <td>4</td>
+        <td>4</td>
+        <td>1</td>
+      </tr>
+      <tr id="LC422" class="js-file-line">
+        <td id="L422" class="blob-num js-line-number" data-line-number="422"></td>
+        <td>Reality (2015)</td>
+        <td>4</td>
+        <td>4</td>
+        <td>1</td>
+      </tr>
+      <tr id="LC423" class="js-file-line">
+        <td id="L423" class="blob-num js-line-number" data-line-number="423"></td>
+        <td>Stung (2015)</td>
+        <td>4</td>
+        <td>4</td>
+        <td>1</td>
+      </tr>
+      <tr id="LC424" class="js-file-line">
+        <td id="L424" class="blob-num js-line-number" data-line-number="424"></td>
+        <td>The Mend (1)</td>
+        <td>4</td>
+        <td>4</td>
+        <td>1</td>
+      </tr>
+      <tr id="LC425" class="js-file-line">
+        <td id="L425" class="blob-num js-line-number" data-line-number="425"></td>
+        <td>A Hard Day (2015)</td>
+        <td>5</td>
+        <td>5</td>
+        <td>1</td>
+      </tr>
+      <tr id="LC426" class="js-file-line">
+        <td id="L426" class="blob-num js-line-number" data-line-number="426"></td>
+        <td>A Midsummer Night&#39;s Dream (2015)</td>
+        <td>5</td>
+        <td>5</td>
+        <td>1</td>
+      </tr>
+      <tr id="LC427" class="js-file-line">
+        <td id="L427" class="blob-num js-line-number" data-line-number="427"></td>
+        <td>A Murder In The Park (2015)</td>
+        <td>5</td>
+        <td>5</td>
+        <td>1</td>
+      </tr>
+      <tr id="LC428" class="js-file-line">
+        <td id="L428" class="blob-num js-line-number" data-line-number="428"></td>
+        <td>Bound to Vengeance (2015)</td>
+        <td>5</td>
+        <td>5</td>
+        <td>1</td>
+      </tr>
+      <tr id="LC429" class="js-file-line">
+        <td id="L429" class="blob-num js-line-number" data-line-number="429"></td>
+        <td>Captive (2015)</td>
+        <td>5</td>
+        <td>5</td>
+        <td>1</td>
+      </tr>
+      <tr id="LC430" class="js-file-line">
+        <td id="L430" class="blob-num js-line-number" data-line-number="430"></td>
+        <td>Far From Men (2015)</td>
+        <td>5</td>
+        <td>5</td>
+        <td>1</td>
+      </tr>
+      <tr id="LC431" class="js-file-line">
+        <td id="L431" class="blob-num js-line-number" data-line-number="431"></td>
+        <td>L.A. Slasher (2015)</td>
+        <td>5</td>
+        <td>5</td>
+        <td>1</td>
+      </tr>
+      <tr id="LC432" class="js-file-line">
+        <td id="L432" class="blob-num js-line-number" data-line-number="432"></td>
+        <td>Sexy et en cavale (2015)</td>
+        <td>5</td>
+        <td>5</td>
+        <td>1</td>
+      </tr>
+      <tr id="LC433" class="js-file-line">
+        <td id="L433" class="blob-num js-line-number" data-line-number="433"></td>
+        <td>That Guy Dick Miller (2015)</td>
+        <td>5</td>
+        <td>5</td>
+        <td>1</td>
+      </tr>
+      <tr id="LC434" class="js-file-line">
+        <td id="L434" class="blob-num js-line-number" data-line-number="434"></td>
+        <td>That Sugar Film (2015)</td>
+        <td>5</td>
+        <td>5</td>
+        <td>1</td>
+      </tr>
+      <tr id="LC435" class="js-file-line">
+        <td id="L435" class="blob-num js-line-number" data-line-number="435"></td>
+        <td>The Intern (2015)</td>
+        <td>5</td>
+        <td>5</td>
+        <td>1</td>
+      </tr>
+      <tr id="LC436" class="js-file-line">
+        <td id="L436" class="blob-num js-line-number" data-line-number="436"></td>
+        <td>The Park Bench (2015)</td>
+        <td>5</td>
+        <td>5</td>
+        <td>1</td>
+      </tr>
+      <tr id="LC437" class="js-file-line">
+        <td id="L437" class="blob-num js-line-number" data-line-number="437"></td>
+        <td>The Wanted 18 (2015)</td>
+        <td>5</td>
+        <td>5</td>
+        <td>1</td>
+      </tr>
+      <tr id="LC438" class="js-file-line">
+        <td id="L438" class="blob-num js-line-number" data-line-number="438"></td>
+        <td>Z For Zachariah (2015)</td>
+        <td>5</td>
+        <td>5</td>
+        <td>1</td>
+      </tr>
+      <tr id="LC439" class="js-file-line">
+        <td id="L439" class="blob-num js-line-number" data-line-number="439"></td>
+        <td>6 Years (2015)</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="LC440" class="js-file-line">
+        <td id="L440" class="blob-num js-line-number" data-line-number="440"></td>
+        <td>7 Minutes (2015)</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="LC441" class="js-file-line">
+        <td id="L441" class="blob-num js-line-number" data-line-number="441"></td>
+        <td>A Year in Champagne (2015)</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="LC442" class="js-file-line">
+        <td id="L442" class="blob-num js-line-number" data-line-number="442"></td>
+        <td>Balls Out (2015)</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="LC443" class="js-file-line">
+        <td id="L443" class="blob-num js-line-number" data-line-number="443"></td>
+        <td>Before I Wake (2015)</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="LC444" class="js-file-line">
+        <td id="L444" class="blob-num js-line-number" data-line-number="444"></td>
+        <td>Big Significant Things (2015)</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="LC445" class="js-file-line">
+        <td id="L445" class="blob-num js-line-number" data-line-number="445"></td>
+        <td>Caprice (2015)</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="LC446" class="js-file-line">
+        <td id="L446" class="blob-num js-line-number" data-line-number="446"></td>
+        <td>Cas d&amp;#233;sesp&amp;#233;r&amp;#233; (2015)</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="LC447" class="js-file-line">
+        <td id="L447" class="blob-num js-line-number" data-line-number="447"></td>
+        <td>Chagall Malevich (2015)</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="LC448" class="js-file-line">
+        <td id="L448" class="blob-num js-line-number" data-line-number="448"></td>
+        <td>Coffee Bloom (2015)</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="LC449" class="js-file-line">
+        <td id="L449" class="blob-num js-line-number" data-line-number="449"></td>
+        <td>Come Blow Your Horn (2015)</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="LC450" class="js-file-line">
+        <td id="L450" class="blob-num js-line-number" data-line-number="450"></td>
+        <td>Dan&#39;s Motel (2015)</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="LC451" class="js-file-line">
+        <td id="L451" class="blob-num js-line-number" data-line-number="451"></td>
+        <td>Ego Trip (2015)</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="LC452" class="js-file-line">
+        <td id="L452" class="blob-num js-line-number" data-line-number="452"></td>
+        <td>El Cartel De La Papa (2015)</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="LC453" class="js-file-line">
+        <td id="L453" class="blob-num js-line-number" data-line-number="453"></td>
+        <td>Electric Boogaloo: The Wild, Untold Story of Cannon Films (2015)</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="LC454" class="js-file-line">
+        <td id="L454" class="blob-num js-line-number" data-line-number="454"></td>
+        <td>Electric Slide (2015)</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="LC455" class="js-file-line">
+        <td id="L455" class="blob-num js-line-number" data-line-number="455"></td>
+        <td>Elephant Song (2015)</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="LC456" class="js-file-line">
+        <td id="L456" class="blob-num js-line-number" data-line-number="456"></td>
+        <td>Eli (2015)</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="LC457" class="js-file-line">
+        <td id="L457" class="blob-num js-line-number" data-line-number="457"></td>
+        <td>Espionne (2015)</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="LC458" class="js-file-line">
+        <td id="L458" class="blob-num js-line-number" data-line-number="458"></td>
+        <td>Farewell to Hollywood (2015)</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="LC459" class="js-file-line">
+        <td id="L459" class="blob-num js-line-number" data-line-number="459"></td>
+        <td>Glass Chin (2015)</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="LC460" class="js-file-line">
+        <td id="L460" class="blob-num js-line-number" data-line-number="460"></td>
+        <td>Guidance (2015)</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="LC461" class="js-file-line">
+        <td id="L461" class="blob-num js-line-number" data-line-number="461"></td>
+        <td>Gun &amp; Goal (2015)</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="LC462" class="js-file-line">
+        <td id="L462" class="blob-num js-line-number" data-line-number="462"></td>
+        <td>How to Change the World (2015)</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="LC463" class="js-file-line">
+        <td id="L463" class="blob-num js-line-number" data-line-number="463"></td>
+        <td>Insanity (2015)</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="LC464" class="js-file-line">
+        <td id="L464" class="blob-num js-line-number" data-line-number="464"></td>
+        <td>Jilebi (2015)</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="LC465" class="js-file-line">
+        <td id="L465" class="blob-num js-line-number" data-line-number="465"></td>
+        <td>Journey to Space 3D (2015)</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="LC466" class="js-file-line">
+        <td id="L466" class="blob-num js-line-number" data-line-number="466"></td>
+        <td>La dame en or (1)</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="LC467" class="js-file-line">
+        <td id="L467" class="blob-num js-line-number" data-line-number="467"></td>
+        <td>La face cache de Margo (2015)</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="LC468" class="js-file-line">
+        <td id="L468" class="blob-num js-line-number" data-line-number="468"></td>
+        <td>La leon (2015)</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="LC469" class="js-file-line">
+        <td id="L469" class="blob-num js-line-number" data-line-number="469"></td>
+        <td>La passion d&#39;Augustine (2015)</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="LC470" class="js-file-line">
+        <td id="L470" class="blob-num js-line-number" data-line-number="470"></td>
+        <td>Le gaucher (2015)</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="LC471" class="js-file-line">
+        <td id="L471" class="blob-num js-line-number" data-line-number="471"></td>
+        <td>Le monde de demain (2015)</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="LC472" class="js-file-line">
+        <td id="L472" class="blob-num js-line-number" data-line-number="472"></td>
+        <td>Le tireur (2015)</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="LC473" class="js-file-line">
+        <td id="L473" class="blob-num js-line-number" data-line-number="473"></td>
+        <td>Little Big Master (2015)</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="LC474" class="js-file-line">
+        <td id="L474" class="blob-num js-line-number" data-line-number="474"></td>
+        <td>Loin de la foule dchan; (2015)</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="LC475" class="js-file-line">
+        <td id="L475" class="blob-num js-line-number" data-line-number="475"></td>
+        <td>Mateo (2015)</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="LC476" class="js-file-line">
+        <td id="L476" class="blob-num js-line-number" data-line-number="476"></td>
+        <td>Melody (2015)</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="LC477" class="js-file-line">
+        <td id="L477" class="blob-num js-line-number" data-line-number="477"></td>
+        <td>Memories of the Sword (2015)</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="LC478" class="js-file-line">
+        <td id="L478" class="blob-num js-line-number" data-line-number="478"></td>
+        <td>Monde Jurassique (2015)</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="LC479" class="js-file-line">
+        <td id="L479" class="blob-num js-line-number" data-line-number="479"></td>
+        <td>Munde Kamaal De (2015)</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="LC480" class="js-file-line">
+        <td id="L480" class="blob-num js-line-number" data-line-number="480"></td>
+        <td>My Italian Secret: The Forgotten Heroes (2015)</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="LC481" class="js-file-line">
+        <td id="L481" class="blob-num js-line-number" data-line-number="481"></td>
+        <td>New Movie (1)</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="LC482" class="js-file-line">
+        <td id="L482" class="blob-num js-line-number" data-line-number="482"></td>
+        <td>Of Horses and Men (2015)</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="LC483" class="js-file-line">
+        <td id="L483" class="blob-num js-line-number" data-line-number="483"></td>
+        <td>One &amp; Two (2015)</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="LC484" class="js-file-line">
+        <td id="L484" class="blob-num js-line-number" data-line-number="484"></td>
+        <td>One and Two (2015)</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="LC485" class="js-file-line">
+        <td id="L485" class="blob-num js-line-number" data-line-number="485"></td>
+        <td>Our Man in Tehran (2015)</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="LC486" class="js-file-line">
+        <td id="L486" class="blob-num js-line-number" data-line-number="486"></td>
+        <td>Pa! Por Mis Hijos Lo Que Sea (2015)</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="LC487" class="js-file-line">
+        <td id="L487" class="blob-num js-line-number" data-line-number="487"></td>
+        <td>Paulo Coelho&#39;s Best Story (2015)</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="LC488" class="js-file-line">
+        <td id="L488" class="blob-num js-line-number" data-line-number="488"></td>
+        <td>Prison 101 (1)</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="LC489" class="js-file-line">
+        <td id="L489" class="blob-num js-line-number" data-line-number="489"></td>
+        <td>Queen of Earth  (2015)</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="LC490" class="js-file-line">
+        <td id="L490" class="blob-num js-line-number" data-line-number="490"></td>
+        <td>SDLFF: A Photographer&#39;s Journey (2015)</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="LC491" class="js-file-line">
+        <td id="L491" class="blob-num js-line-number" data-line-number="491"></td>
+        <td>Searching For Home, Coming Back From War (2015)</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="LC492" class="js-file-line">
+        <td id="L492" class="blob-num js-line-number" data-line-number="492"></td>
+        <td>Selam Bahara Yolculuk (2015)</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="LC493" class="js-file-line">
+        <td id="L493" class="blob-num js-line-number" data-line-number="493"></td>
+        <td>Set Fire to the Stars (2015)</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="LC494" class="js-file-line">
+        <td id="L494" class="blob-num js-line-number" data-line-number="494"></td>
+        <td>Shake the Dust (2015)</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="LC495" class="js-file-line">
+        <td id="L495" class="blob-num js-line-number" data-line-number="495"></td>
+        <td>Sleeping With Other People (2015)</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="LC496" class="js-file-line">
+        <td id="L496" class="blob-num js-line-number" data-line-number="496"></td>
+        <td>Specticast: From Here to Eternity (2015)</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="LC497" class="js-file-line">
+        <td id="L497" class="blob-num js-line-number" data-line-number="497"></td>
+        <td>The Curse of Downers Grove (2015)</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="LC498" class="js-file-line">
+        <td id="L498" class="blob-num js-line-number" data-line-number="498"></td>
+        <td>THE HIDDEN ROOM / THE SLEEPING TIGER (2015)</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="LC499" class="js-file-line">
+        <td id="L499" class="blob-num js-line-number" data-line-number="499"></td>
+        <td>The Merchant of Venice: Presented by RSC (2015)</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="LC500" class="js-file-line">
+        <td id="L500" class="blob-num js-line-number" data-line-number="500"></td>
+        <td>The Mirage (2015)</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="LC501" class="js-file-line">
+        <td id="L501" class="blob-num js-line-number" data-line-number="501"></td>
+        <td>The New Girlfriend (2015)</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="LC502" class="js-file-line">
+        <td id="L502" class="blob-num js-line-number" data-line-number="502"></td>
+        <td>The Next Step Live: The Movie (2015)</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="LC503" class="js-file-line">
+        <td id="L503" class="blob-num js-line-number" data-line-number="503"></td>
+        <td>The Passion of Augustine (2015)</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="LC504" class="js-file-line">
+        <td id="L504" class="blob-num js-line-number" data-line-number="504"></td>
+        <td>The Second Mother (2015)</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="LC505" class="js-file-line">
+        <td id="L505" class="blob-num js-line-number" data-line-number="505"></td>
+        <td>Traque (1)</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="LC506" class="js-file-line">
+        <td id="L506" class="blob-num js-line-number" data-line-number="506"></td>
+        <td>Two 4 One (2015)</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="LC507" class="js-file-line">
+        <td id="L507" class="blob-num js-line-number" data-line-number="507"></td>
+        <td>Valiyavan (2015)</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="LC508" class="js-file-line">
+        <td id="L508" class="blob-num js-line-number" data-line-number="508"></td>
+        <td>WWE SummerSlam 2015 (2015)</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="LC509" class="js-file-line">
+        <td id="L509" class="blob-num js-line-number" data-line-number="509"></td>
+        <td>Yagavarayinum Naa Kaakka (2015)</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="LC510" class="js-file-line">
+        <td id="L510" class="blob-num js-line-number" data-line-number="510"></td>
+        <td>Yesterday, Today and Tomorrow (1964)</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr id="LC511" class="js-file-line">
+        <td id="L511" class="blob-num js-line-number" data-line-number="511"></td>
+        <td>Zarafa (1)</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+  </div>
+
+</div>
+
+<button type="button" data-facebox="#jump-to-line" data-facebox-class="linejump" data-hotkey="l" class="d-none">Jump to Line</button>
+<div id="jump-to-line" style="display:none">
+  <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="" class="js-jump-to-line-form" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+    <input class="form-control linejump-input js-jump-to-line-field" type="text" placeholder="Jump to line&hellip;" aria-label="Jump to line" autofocus>
+    <button type="submit" class="btn">Go</button>
+</form></div>
+
+  </div>
+  <div class="modal-backdrop js-touch-events"></div>
+</div>
+
+
+    </div>
+  </div>
+
+  </div>
+
+      <div class="container site-footer-container">
+  <div class="site-footer" role="contentinfo">
+    <ul class="site-footer-links float-right">
+        <li><a href="https://github.com/contact" data-ga-click="Footer, go to contact, text:contact">Contact GitHub</a></li>
+      <li><a href="https://developer.github.com" data-ga-click="Footer, go to api, text:api">API</a></li>
+      <li><a href="https://training.github.com" data-ga-click="Footer, go to training, text:training">Training</a></li>
+      <li><a href="https://shop.github.com" data-ga-click="Footer, go to shop, text:shop">Shop</a></li>
+        <li><a href="https://github.com/blog" data-ga-click="Footer, go to blog, text:blog">Blog</a></li>
+        <li><a href="https://github.com/about" data-ga-click="Footer, go to about, text:about">About</a></li>
+
+    </ul>
+
+    <a href="https://github.com" aria-label="Homepage" class="site-footer-mark" title="GitHub">
+      <svg aria-hidden="true" class="octicon octicon-mark-github" height="24" version="1.1" viewBox="0 0 16 16" width="24"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+</a>
+    <ul class="site-footer-links">
+      <li>&copy; 2017 <span title="0.07952s from github-fe152-cp1-prd.iad.github.net">GitHub</span>, Inc.</li>
+        <li><a href="https://github.com/site/terms" data-ga-click="Footer, go to terms, text:terms">Terms</a></li>
+        <li><a href="https://github.com/site/privacy" data-ga-click="Footer, go to privacy, text:privacy">Privacy</a></li>
+        <li><a href="https://github.com/security" data-ga-click="Footer, go to security, text:security">Security</a></li>
+        <li><a href="https://status.github.com/" data-ga-click="Footer, go to status, text:status">Status</a></li>
+        <li><a href="https://help.github.com" data-ga-click="Footer, go to help, text:help">Help</a></li>
+    </ul>
+  </div>
+</div>
+
+
+
+  
+
+  <div id="ajax-error-message" class="ajax-error-message flash flash-error">
+    <svg aria-hidden="true" class="octicon octicon-alert" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M8.865 1.52c-.18-.31-.51-.5-.87-.5s-.69.19-.87.5L.275 13.5c-.18.31-.18.69 0 1 .19.31.52.5.87.5h13.7c.36 0 .69-.19.86-.5.17-.31.18-.69.01-1L8.865 1.52zM8.995 13h-2v-2h2v2zm0-3h-2V6h2v4z"/></svg>
+    <button type="button" class="flash-close js-flash-close js-ajax-error-dismiss" aria-label="Dismiss error">
+      <svg aria-hidden="true" class="octicon octicon-x" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48z"/></svg>
+    </button>
+    You can't perform that action at this time.
+  </div>
+
+
+    
+    <script crossorigin="anonymous" integrity="sha256-UGFpyy/nYlS5IejJRN1AblyrLXGeZX6s6K2phIYjFHI=" src="https://assets-cdn.github.com/assets/frameworks-506169cb2fe76254b921e8c944dd406e5cab2d719e657eace8ada98486231472.js"></script>
+    <script async="async" crossorigin="anonymous" integrity="sha256-lQzYeNElJXbpHbWUr8lHlqxx7w7UAWG6zE2LFBUn/cg=" src="https://assets-cdn.github.com/assets/github-950cd878d1252576e91db594afc94796ac71ef0ed40161bacc4d8b141527fdc8.js"></script>
+    
+    
+    
+    
+  <div class="js-stale-session-flash stale-session-flash flash flash-warn flash-banner d-none">
+    <svg aria-hidden="true" class="octicon octicon-alert" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M8.865 1.52c-.18-.31-.51-.5-.87-.5s-.69.19-.87.5L.275 13.5c-.18.31-.18.69 0 1 .19.31.52.5.87.5h13.7c.36 0 .69-.19.86-.5.17-.31.18-.69.01-1L8.865 1.52zM8.995 13h-2v-2h2v2zm0-3h-2V6h2v4z"/></svg>
+    <span class="signed-in-tab-flash">You signed in with another tab or window. <a href="">Reload</a> to refresh your session.</span>
+    <span class="signed-out-tab-flash">You signed out in another tab or window. <a href="">Reload</a> to refresh your session.</span>
+  </div>
+  <div class="facebox" id="facebox" style="display:none;">
+  <div class="facebox-popup">
+    <div class="facebox-content" role="dialog" aria-labelledby="facebox-header" aria-describedby="facebox-description">
+    </div>
+    <button type="button" class="facebox-close js-facebox-close" aria-label="Close modal">
+      <svg aria-hidden="true" class="octicon octicon-x" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48z"/></svg>
+    </button>
+  </div>
+</div>
+
+
+  </body>
+</html>
+
